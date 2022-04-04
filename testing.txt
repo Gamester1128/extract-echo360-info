@@ -1,0 +1,1553 @@
+<base href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part1/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part 1</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" async src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+<script src="https://connect.facebook.net/signals/config/288117859005643?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/313343962900596?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/571252266361666?v=2.9.33&amp;r=stable" async></script>
+<script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-55N43RF"></script>
+<script>
+  var dataLayer = [];
+  var gtmData = {};
+
+  
+    gtmData.advertisingPermission = true;
+    gtmData.performancePermission = true;
+    gtmData.functionalPermission = true;
+  
+  gtmData.analyticsPageUrl = '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part1';
+
+  dataLayer.push(gtmData);
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document, 'script','dataLayer', 'GTM-55N43RF');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Warwick Search" href="//search.warwick.ac.uk/static/search/osd.xml"><!-- Google canonical URL - the main URL for this page -->
+<link rel="canonical" href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part1/">
+<meta name="robots" content="noindex,nofollow">
+<link rel="apple-touch-icon" sizes="57x57" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-57x57.png.595542567195">
+<link rel="apple-touch-icon" sizes="60x60" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-60x60.png.493371741217">
+<link rel="apple-touch-icon" sizes="72x72" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-72x72.png.203424194728">
+<link rel="apple-touch-icon" sizes="76x76" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-76x76.png.247553332752">
+<link rel="apple-touch-icon" sizes="114x114" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-114x114.png.843902449578">
+<link rel="apple-touch-icon" sizes="120x120" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-120x120.png.333863844977">
+<link rel="apple-touch-icon" sizes="144x144" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-144x144.png.552887115038">
+<link rel="apple-touch-icon" sizes="152x152" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-152x152.png.175734862673">
+<link rel="apple-touch-icon" sizes="180x180" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-180x180.png.240072141587">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-32x32.png.165918197265" sizes="32x32">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/android-chrome-192x192.png.336101619978" sizes="192x192">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-96x96.png.276161049719" sizes="96x96">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-16x16.png.207301322891" sizes="16x16">
+<meta name="msapplication-TileImage" content="https://warwick.ac.uk/static_war/render/id7/images/mstile-144x144.png.116582949768">
+<meta name="msapplication-TileColor" content="#00407A">
+<meta name="theme-color" content="#00407A"><!-- Pre-connect to Google Fonts domain -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;subset=latin,latin-ext&amp;display=optional" rel="stylesheet" as="style" type="text/css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"><!-- Pre-load FontAwesome Pro font files. Browsers supporting link[rel="preload"] all support woff2 -->
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-light-300.woff2.251483538349" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-regular-400.woff2.792461908222" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-solid-900.woff2.324325500111" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-brands-400.woff2.150834009277" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-duotone-900.woff2.146310607822" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/id7/css/pack7.css.333597196295" type="text/css"><!-- Pre-load the statuspage CSS, then after the page finishes loading, parse it -->
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/statuspage-widget/main.css.160527713577" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="shortcut icon" type="image/x-icon" href="https://warwick.ac.uk/static_war/render/id7/images/favicon.ico.214665304133">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_site/fac/sci/dcs/site.css.695705106722" type="text/css">
+<script type="text/javascript" src="https://warwick.ac.uk/static_war/render/id7/js/id7-bundle-render.js.146613653449"></script>
+<script type="text/javascript" src="https://warwick.ac.uk/static_site/fac/sci/dcs/site.js.228251723829"></script>
+<script type="text/javascript">
+    SitebuilderInfo.url = '/fac/sci/dcs/teaching/material/cs131/part1';
+    SitebuilderInfo.lastUpdated = 1611146779736;
+    SitebuilderInfo.lastContentUpdated = 1611146779736;
+    SitebuilderInfo.buildTimestamp = '1613647620432';
+</script>
+<link rel="alternate" type="application/rss+xml" title="Changes in /fac/sci/dcs/ (RSS 2.0)" href="https://warwick.ac.uk/sitebuilder2/api/rss/siteChanges.rss?page=/fac/sci/dcs">
+<script type="text/javascript">
+Event.onDOMReady(function() { var email314709186 = '<a';
+email314709186 += ' href=';
+email314709186 += '"mailt';
+email314709186 += 'o:&#x6';
+email314709186 += '3;&#111;&';
+email314709186 += '#10';
+email314709186 += '9;';
+email314709186 += '&#112;&#45;&#x73;&#x63;&#x69;&#64;&#x64;&#99;&#115;&#x2e;&#119;';
+email314709186 += '&#97;&#x72;&#x77;&#x6';
+email314709186 += '9;&#9';
+email314709186 += '9;&#107;&#x2e;&#97;&#x63;&';
+email314709186 += '#46;&#x75;&#107;';
+email314709186 += '">&#99;';
+email314709186 += '&#111';
+email314709186 += ';&#x6d;&#x70;&';
+email314709186 += '#x2d;&#x73;&#99;&#105;&#64;&#100;&#99;';
+email314709186 += '&#x73;&#x2e;&#x77;&';
+email314709186 += '#97;&#x72;';
+email314709186 += '&#';
+email314709186 += '119;&#105;&#x6';
+email314709186 += '3;';
+email314709186 += '&#x6b;&#x2e;&#97;&#x63;&#x';
+email314709186 += '2e;&#';
+email314709186 += '117;&#107;<\/a>';
+if(document.getElementById('email314709186')) document.getElementById('email314709186').innerHTML = email314709186;
+});
+</script>
+<script async src="https://static.hotjar.com/c/hotjar-762048.js?sv=6"></script>
+<script async src="https://script.hotjar.com/modules.851cc60e98a814a7bf2d.js" charset="utf-8"></script>
+<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/617928580/?random=1613725844860&amp;cv=9&amp;fst=1613725844860&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1848&amp;u_cd=24&amp;u_his=5&amp;u_tz=0&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa2a1&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart1&amp;tiba=Part%201&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/617928580/?random=1613725844894&amp;cv=9&amp;fst=1613725844894&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1848&amp;u_cd=24&amp;u_his=5&amp;u_tz=0&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa2a1&amp;sendb=1&amp;ig=1&amp;data=event%3Doptimize.callback&amp;frm=0&amp;url=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart1&amp;tiba=Part%201&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<script src="https://ssl.google-analytics.com/ga.js" type="text/javascript" async></script>
+<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55N43RF&amp;advertisingPermission=true&amp;functionalPermission=true&amp;performancePermission=true" height="0" width="0" style="display:none;visibility:hidden"></iframe> 
+</noscript>
+<div class="id7-left-border"></div>
+<div class="id7-fixed-width-container"> 
+ <div id="covid-19-banner" class="global-info-banner"> <a class="large" href="https://warwick.ac.uk/coronavirus"> Coronavirus (Covid-19): Latest updates and information </a> 
+ </div> <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> <a class="sr-only sr-only-focusable" href="#primary-nav" accesskey="N">Skip to navigation</a> 
+ <header class="id7-page-header"> 
+  <div class="id7-utility-masthead"> 
+   <nav class="id7-utility-bar" aria-label="Utility bar"> 
+    <ul> 
+     <li id="cookie-preference-link"><a href="https://warwick.ac.uk/sitebuilder2/user/cookiepreference/edit.htm?returnTo=/fac/sci/dcs/teaching/material/cs131/part1/" rel="nofollow" class="ut">Cookie preferences</a> </li> 
+     <li id="notify-link"><a href="https://warwick.ac.uk/sitebuilder2/user/page/notifications.htm?page=/fac/sci/dcs/teaching/material/cs131/part1/" rel="nofollow" class="ut">Notify</a> </li> 
+     <li id="account-link" data-hj-suppress=""><a href="https://websignon.warwick.ac.uk/origin/logout?target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart1" rel="nofollow" class="ut" data-toggle="id7:account-popover" data-loginlink="https://websignon.warwick.ac.uk/origin/slogin?shire=https%3A%2F%2Fwarwick.ac.uk%2Fsitebuilder2%2Fshire-read&amp;providerId=urn%3Awarwick.ac.uk%3Asitebuilder2%3Aread%3Aservice&amp;target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart1" data-usercode="u2003834" data-name="Rahul Vanmali" data-original-title="" title="" aria-expanded="false">Rahul Vanmali<span class="fa-stack id7-notifications-badge animating"> <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i> <strong class="fa-stack-1x fa brand-text counter-value slideInDown" title="Notifications">1</strong> <span class="sr-only">notifications</span> </span><span class="caret"></span></a> </li> 
+    </ul> 
+   </nav> 
+   <div class="id7-masthead"> 
+    <div class="id7-masthead-contents"> 
+     <div class="clearfix"> 
+      <div class="id7-logo-column"> 
+       <div class="id7-logo-row"> 
+        <div class="id7-logo"> <a href="https://warwick.ac.uk/" title="University of Warwick homepage"> <img src="https://warwick.ac.uk/static_war/render/id7/images/shim.gif.394887852338" alt="University of Warwick homepage" width="160" height="80"> </a> 
+        </div> 
+        <nav class="id7-site-links" aria-label="Site links"> 
+         <ul> 
+          <li><a href="https://warwick.ac.uk/study">Study</a></li> 
+          <li><a href="https://warwick.ac.uk/research">Research</a></li> 
+          <li><a href="https://warwick.ac.uk/business">Business</a></li> 
+          <li><a href="https://warwick.ac.uk/alumni">Alumni</a></li> 
+          <li><a href="https://warwick.ac.uk/news">News</a></li> 
+          <li><a href="https://warwick.ac.uk/engagement">Engagement</a></li> 
+         </ul> 
+        </nav> 
+       </div> 
+      </div> 
+      <div class="id7-search-column"> 
+       <div class="id7-search"> 
+        <form action="//search.warwick.ac.uk/website" role="search"> 
+         <input type="hidden" name="source" value="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part1/"> 
+         <div class="form-group"> 
+          <div class="id7-search-box-container floating-label" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="gen-id-100000"> 
+           <input type="search" class="form-control input-lg" id="id7-search-box" name="q" placeholder="Search Warwick" data-suggest="go" aria-label="Search Warwick" autocomplete="off" aria-autocomplete="list" aria-controls="gen-id-100000"> 
+           <ul class="typeahead dropdown-menu" role="listbox" aria-label="Search results" style="top: 46px; left: 0px; display: none;" id="gen-id-100000"></ul> 
+           <div class="sr-only" role="status" aria-live="polite"></div> <label for="id7-search-box">Search Warwick</label> <button type="submit" class="search-button"><span class="sr-only">Search</span><i class="fas fa-search fa-2x" aria-hidden="true"></i></button> 
+          </div> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="id7-header-text clearfix" style="height: 54px;"> 
+      <h1 class="affix-top headroom"> <span class="id7-current-site-link visible-xs-inline"> <a title="Computer Science home page [1]" href="/fac/sci/dcs/">DCS</a> </span><span class="id7-current-site-link hidden-xs"> <a accesskey="1" title="Computer Science home page [1]" href="/fac/sci/dcs/">Department of Computer Science</a> </span> </h1> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-navigation affix-top headroom" id="primary-nav"> 
+   <nav class="navbar navbar-primary hidden-xs" role="navigation" aria-label="Primary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="first dropdown" data-lastmodified="1612431350392"> <a href="/fac/sci/dcs/admissions/" data-page-url="/fac/sci/dcs/admissions/" data-toggle="dropdown" aria-haspopup="true">Admissions</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Admissions</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/undergraduate/" data-page-url="/fac/sci/dcs/admissions/undergraduate/">Undergraduate</a> </li> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/postgraduate/" data-page-url="/fac/sci/dcs/admissions/postgraduate/">Postgraduate Taught</a> </li> 
+       <li data-lastmodified="1612430903555" role="menuitem"> <a href="/fac/sci/dcs/admissions/degree_apprenticeships/" data-page-url="/fac/sci/dcs/admissions/degree_apprenticeships/">Degree Apprenticeships</a> </li> 
+      </ul> </li> 
+     <li class="next-secondary active second dropdown" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/" data-toggle="dropdown" aria-haspopup="true">Teaching</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Teaching</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/coronavirus/" data-page-url="/fac/sci/dcs/teaching/coronavirus/">Coronavirus<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/selfisolation/" data-page-url="/fac/sci/dcs/teaching/selfisolation/">DCS Self Isolation Notification</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/studentsupportappointments/" data-page-url="/fac/sci/dcs/teaching/studentsupportappointments/">Student Support Appointment Booking Form</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/courses/" data-page-url="/fac/sci/dcs/teaching/courses/">Course Structures</a> </li> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/handbook/" data-page-url="/fac/sci/dcs/teaching/handbook/">Student Handbook<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/modules/" data-page-url="/fac/sci/dcs/teaching/modules/">Modules Taught</a> </li> 
+       <li class="protected recently-updated" data-lastmodified="1613513785369" role="menuitem"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+      </ul> </li> 
+     <li class="dropdown" data-lastmodified="1610537109578"> <a href="/fac/sci/dcs/research/" data-page-url="/fac/sci/dcs/research/" data-toggle="dropdown" aria-haspopup="true">Research</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Research</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/doctoralstudies/" data-page-url="/fac/sci/dcs/research/doctoralstudies/">Doctoral Studies</a> </li> 
+       <li class="recently-updated" data-lastmodified="1613491957724" role="menuitem"> <a href="/fac/sci/dcs/research/research-interdisc/" data-page-url="/fac/sci/dcs/research/research-interdisc/">Interdisciplinary Research Centres</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/impact/" data-page-url="/fac/sci/dcs/research/impact/">Impact and Innovation</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ac/" data-page-url="/fac/sci/dcs/research/ac/">Applied Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ai/" data-page-url="/fac/sci/dcs/research/ai/">Artificial Intelligence</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/datascience/" data-page-url="/fac/sci/dcs/research/datascience/">Data Science</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/hcc/" data-page-url="/fac/sci/dcs/research/hcc/">Human Centred Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/systems/" data-page-url="/fac/sci/dcs/research/systems/">Systems and Security</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/focs/" data-page-url="/fac/sci/dcs/research/focs/">Theory and Foundations</a> </li> 
+      </ul> </li> 
+     <li data-lastmodified="1610979242144"> <a href="/fac/sci/dcs/people/" data-page-url="/fac/sci/dcs/people/">People</a></li> 
+     <li data-lastmodified="1613046125664"> <a href="/fac/sci/dcs/news/" data-page-url="/fac/sci/dcs/news/">News</a></li> 
+     <li class="dropdown" data-lastmodified="1612704558717"> <a href="/fac/sci/dcs/events/" data-page-url="/fac/sci/dcs/events/" data-toggle="dropdown" aria-haspopup="true">Events</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Events</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1611775499228" role="menuitem"> <a href="/fac/sci/dcs/events/colloquia/" data-page-url="/fac/sci/dcs/events/colloquia/">Computer Science Colloquium</a> </li> 
+      </ul> </li> 
+     <li class="recently-updated" data-lastmodified="1613639149032"> <a href="/fac/sci/dcs/jobs/" data-page-url="/fac/sci/dcs/jobs/">Vacancies</a></li> 
+     <li class="protected" data-lastmodified="1613033396423"> <a href="/fac/sci/dcs/intranet/" data-page-url="/fac/sci/dcs/intranet/">Intranet<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+   <nav class="navbar navbar-secondary" role="navigation" aria-label="Secondary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="nav-breadcrumb first" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/">Teaching</a></li> 
+     <li class="nav-breadcrumb second protected recently-updated" data-lastmodified="1613513785369"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="nav-breadcrumb protected recently-updated" data-lastmodified="1613561700740"> <a href="/fac/sci/dcs/teaching/material/cs131/" data-page-url="/fac/sci/dcs/teaching/material/cs131/">CS131<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="active nav-breadcrumb last protected" data-lastmodified="1611146779736"> <a tabindex="0" data-page-url="/fac/sci/dcs/teaching/material/cs131/part1/">Part 1<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+  </div> 
+  <div class="id7-navigation-marker" style="height: 69.1875px;"></div> 
+ </header> 
+ <main id="main" class="id7-main-content-area"> 
+  <header> 
+   <div class="id7-horizontal-divider"> 
+    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" width="1130" height="41" viewbox="0, 0, 1130, 41"> <path d="m 0,0.5 1030.48, 0 22.8,40 16.96,-31.4 16.96,31.4 22.8,-40 20,0" class="divider" stroke="#383838" fill="none"></path> 
+    </svg> 
+   </div> 
+   <div class="id7-page-title"> 
+    <h1> Part 1 </h1> 
+   </div> 
+  </header> 
+  <div class="id7-main-content"> 
+   <div class="layout layout-75-25"> 
+    <div class="column-1"> 
+     <div class="column-1-content"> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 1: (lectures 1-3)</strong> </p> 
+       <ul> 
+        <li>INTEGERS <a href="https://web.microsoftstream.com/video/90a6143f-56de-443d-a958-99972947188c">Lecture 1 (video)</a> | <a href="lecture1.pdf">Slides 1</a> || <a href="https://web.microsoftstream.com/video/55486ca5-8e94-498d-b44b-7479b016993b">Examples (video)</a> | <a href="lecture_1_examples.pdf">Slides examples</a> || <a href="note1.pdf"><strong>Notes 1 (Integers)</strong></a> </li> 
+        <li>INTEGERS and REAL NUMBERS <a href="https://web.microsoftstream.com/video/de7e6ffc-7a13-48e6-a7f3-ec3921303378">Lecture 2.1 (video)</a> | <a href="lecture2_1.pdf">Slides 2.1</a> || <a href="https://web.microsoftstream.com/video/98324aa7-ff25-4550-8803-e03aa0846452">Lecture 2.2 (video)</a> | <a href="lecture2_2.pdf">Slided 2.2</a> ||</li> 
+        <li>REAL NUMBERS cont'd <a href="https://web.microsoftstream.com/video/80e905b2-7c45-4cf5-b3cf-905171b756d6">Lecture 3.1 (video)</a> | <a href="lecture3_1.pdf">Slides 3.1</a> || <a href="note2.pdf"><strong>Notes 2 (Real numbers)</strong></a> </li> 
+       </ul> 
+       <p><em>Synchronous session:</em> <a href="real_numbers_synch1.pdf">Slides 3.2</a> | <a href="https://web.microsoftstream.com/video/f7935c5d-45f1-4cd8-9bec-c8dc13dfc8b5">Video 3.2</a> </p> 
+       <ul> 
+        <li>REAL NUMBERS final part <a href="https://web.microsoftstream.com/video/c824fc55-702c-4ab5-887d-f69918ebe1dc">Lecture 3.3 (video)</a> | <a href="real_numbers_end.pdf">Slides 3.3</a> ||</li> 
+       </ul> 
+      </div> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 2: (lecture 4)</strong> </p> 
+       <ul> 
+        <li>COMPLEX NUMBERS <a href="https://web.microsoftstream.com/video/ff0ea3f3-9e02-43ac-8593-9f0826449a23">Lecture 4.1 (video)</a> | <a href="lecture4_1.pdf">Slides 4.1</a> || <a href="https://web.microsoftstream.com/video/9d786d02-5e44-4010-8e3f-5e4788cad3d0">Lecture 4.2 (video)</a> | <a href="lecture4_2.pdf">Slides 4.2</a> || <strong><a href="note3.pdf">Notes 3 (Complex numbers)</a></strong> </li> 
+       </ul> 
+       <p>Exercises: <a href="https://web.microsoftstream.com/video/393cd84e-208d-4594-9cf1-30de5cad8750">Video</a> | <a href="complex_numbers_exercises.pdf">Slides</a> </p> 
+      </div> 
+      <p>See lectures 5 and 6 for week 2 in Part 2.</p> 
+     </div> 
+    </div> 
+    <div class="column-2"> 
+     <div class="column-2-content"> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </main> 
+ <footer class="id7-page-footer id7-footer-coloured"> 
+  <div class="id7-site-footer"> 
+   <div class="id7-site-footer-content"> 
+    <div class="row "> 
+     <div class="col-sm-6"> 
+      <p>Department of Computer Science, <br> University of Warwick, CV4 7AL <br> E-mail: <span id="email314709186"><a href="mailto:comp-sci@dcs.warwick.ac.uk">comp-sci@dcs.warwick.ac.uk</a></span>, <br> Telephone: <a href="tel:+442476523193">+44 (0)24 7652 3193</a> </p> 
+     </div> 
+     <div class="col-sm-6"> 
+      <div class="pull-right"> <a href="/fac/sci/dcs/intranet" class="btn btn-primary">DCS Intranet </a> <a href="/fac/sci/dcs/people/athena-swan/"><img src="/fac/sci/dcs/athena-swan-bronze-100.png" alt="Athena Swan HE Charter Bronze Award logo" border="0"></a> <a href="https://www.facebook.com/warwickdcs/" aria-label="DCS on Facebook"><i class="fa fa-facebook fa-3x fa-fw"></i><span class="sr-only">Facebook</span></a><a href="https://twitter.com/WarwickDCS" aria-label="DCS on Twitter"><i class="fa fa-twitter fa-3x fa-fw"></i><span class="sr-only">Twitter</span></a><a href="https://www.linkedin.com/groups/38372/" aria-label="DCS on LinkedIn"><i class="fa fa-linkedin fa-3x fa-fw"></i><span class="sr-only">LinkedIn</span></a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-app-footer"> 
+   <div class="id7-app-footer-content"> 
+    <div class="id7-logo-bleed"></div> 
+    <div id="page-footer-elements" class="nofollow clearfix page-footer-elements">
+      Page contact: <a id="email-owner-link" href="/sitebuilder2/api/ajax/emailOwner.htm?page=%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart1" class="no-print-expand" title="Send an email to Yulia Timofeeva" rel="nofollow">Yulia Timofeeva</a> 
+     <br> Last revised: Wed 20 Jan 2021 
+    </div> 
+    <div class="id7-footer-utility"> 
+     <ul> 
+      <li id="powered-by-link"> Powered by <a href="https://warwick.ac.uk/sitebuilder" title="More information about SiteBuilder">Sitebuilder</a> </li> 
+      <li id="copyright-link"><a href="http://warwick.ac.uk/copyright" title="Copyright Statement">© MMXXI</a></li> 
+      <li id="terms-link"><a href="http://warwick.ac.uk/terms/general" title="Terms of use">Terms</a></li> 
+      <li id="privacy-link"><a href="http://warwick.ac.uk/privacy" title="Privacy notice">Privacy</a></li> 
+      <li id="cookies-link"><a href="http://warwick.ac.uk/cookies" title="Information about cookies">Cookies</a></li> 
+      <li id="accessibility-link"><a href="https://warwick.ac.uk/accessibility" title="Accessibility information [0]" accesskey="0">Accessibility</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+ </footer> 
+</div>
+<div class="id7-right-border"></div><!-- New analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('require', 'linkid', 'linkid.js');
+    
+    
+    
+    ga('create', 'UA-40911470-1', 'auto', 'global1');
+    ga('global1.set', 'anonymizeIp', true);
+    ga('global1.send', 'pageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part1');
+    
+    
+    
+    
+    
+        
+        
+    var _gaq = _gaq || [];
+    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+    _gaq.push(['site._setAccount', 'UA-27588828-1']);
+    _gaq.push(['site._trackPageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part1']);
+    _gaq.push(['site._trackPageLoadTime']);
+    
+    var analyticsLoad = function() {
+        var s    = document.createElement('script');
+        s.src    = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.type   = "text/javascript";
+        s.async  = true;
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
+    };
+    if (window.Event && Event.observe) {
+        Event.observe(window, 'load', analyticsLoad);
+    } else {
+        var oldLoad = window.onload;
+        window.onload = function() {
+            if (typeof oldLoad == 'function') oldLoad();
+            analyticsLoad();
+        };
+    }
+        
+    
+    
+    </script>
+<div class="cookie-preference-modal-container"></div>
+<div class="statuspage-embed-container" data-api-base="https://status.warwick.ac.uk/api" data-components="[&quot;j9ksmwrhqs9v&quot;, &quot;fzcttzffk1j0&quot;, &quot;lyljzmdxg3yg&quot;, &quot;qkfm31zsq8c5&quot;]"> 
+ <div class="StatusPageEmbed StatusPageEmbed--bl StatusPageEmbed--none  "> 
+  <div class="StatusPageEmbed__icon"></div> 
+  <div class="StatusPageEmbed__content"> 
+   <h1 class="StatusPageEmbed__content__title">All Systems Operational</h1> 
+   <div class="StatusPageEmbed__content__context"></div> 
+  </div> 
+  <div class="StatusPageEmbed__close"> <button class="StatusPageEmbed__close__button" aria-label="Close" tabindex="-1"><i class="fas fa-times" aria-hidden="true"></i></button> 
+  </div> 
+ </div> 
+</div>
+<script async type="module" src="https://warwick.ac.uk/static_war/render/statuspage-widget/main.js.258593508940"></script>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:762048,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+<script type="text/javascript" id="">(function(a){a(document).ready(function(){a("#account-link").attr("data-hj-suppress","")})})(window.jQuery);</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","571252266361666");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=571252266361666&amp;ev=PageView
+&amp;noscript=1"> 
+</noscript>
+<div style="display: none; visibility: hidden;"> 
+ <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","313343962900596");fbq("track","PageView");</script> 
+ <noscript></noscript> 
+</div>
+<script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-617928580"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","288117859005643");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=288117859005643&amp;ev=PageView&amp;noscript=1"> 
+</noscript>
+<img src="https://ib.adnxs.com/seg?add=24365203&amp;t=2" width="1" height="1">
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-617928580");</script>
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+<div class="modal image-modal" id="image-modal" role="dialog" aria-modal="true"> 
+ <div class="modal-dialog"> 
+  <div class="modal-content"> 
+   <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+    <h4 class="modal-title">&nbsp;</h4> 
+   </div> 
+   <div class="modal-body"></div> 
+   <div style="line-height: normal; text-align: left;" class="modal-footer"></div><i class="image-controls left fa fa-chevron-left fa-2x"></i><i class="image-controls right fa fa-chevron-right fa-2x"></i> 
+  </div> 
+ </div> 
+</div>
+<base href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part2/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part 2</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script>
+<script type="text/javascript" async src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+<script src="https://connect.facebook.net/signals/config/288117859005643?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/313343962900596?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/571252266361666?v=2.9.33&amp;r=stable" async></script>
+<script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-55N43RF"></script>
+<script>
+  var dataLayer = [];
+  var gtmData = {};
+
+  
+    gtmData.advertisingPermission = true;
+    gtmData.performancePermission = true;
+    gtmData.functionalPermission = true;
+  
+  gtmData.analyticsPageUrl = '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part2';
+
+  dataLayer.push(gtmData);
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document, 'script','dataLayer', 'GTM-55N43RF');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Warwick Search" href="//search.warwick.ac.uk/static/search/osd.xml"><!-- Google canonical URL - the main URL for this page -->
+<link rel="canonical" href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part2/">
+<meta name="robots" content="noindex,nofollow">
+<link rel="apple-touch-icon" sizes="57x57" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-57x57.png.595542567195">
+<link rel="apple-touch-icon" sizes="60x60" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-60x60.png.493371741217">
+<link rel="apple-touch-icon" sizes="72x72" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-72x72.png.203424194728">
+<link rel="apple-touch-icon" sizes="76x76" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-76x76.png.247553332752">
+<link rel="apple-touch-icon" sizes="114x114" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-114x114.png.843902449578">
+<link rel="apple-touch-icon" sizes="120x120" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-120x120.png.333863844977">
+<link rel="apple-touch-icon" sizes="144x144" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-144x144.png.552887115038">
+<link rel="apple-touch-icon" sizes="152x152" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-152x152.png.175734862673">
+<link rel="apple-touch-icon" sizes="180x180" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-180x180.png.240072141587">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-32x32.png.165918197265" sizes="32x32">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/android-chrome-192x192.png.336101619978" sizes="192x192">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-96x96.png.276161049719" sizes="96x96">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-16x16.png.207301322891" sizes="16x16">
+<meta name="msapplication-TileImage" content="https://warwick.ac.uk/static_war/render/id7/images/mstile-144x144.png.116582949768">
+<meta name="msapplication-TileColor" content="#00407A">
+<meta name="theme-color" content="#00407A"><!-- Pre-connect to Google Fonts domain -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;subset=latin,latin-ext&amp;display=optional" rel="stylesheet" as="style" type="text/css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"><!-- Pre-load FontAwesome Pro font files. Browsers supporting link[rel="preload"] all support woff2 -->
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-light-300.woff2.251483538349" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-regular-400.woff2.792461908222" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-solid-900.woff2.324325500111" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-brands-400.woff2.150834009277" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-duotone-900.woff2.146310607822" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/id7/css/pack7.css.333597196295" type="text/css"><!-- Pre-load the statuspage CSS, then after the page finishes loading, parse it -->
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/statuspage-widget/main.css.160527713577" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="shortcut icon" type="image/x-icon" href="https://warwick.ac.uk/static_war/render/id7/images/favicon.ico.214665304133">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_site/fac/sci/dcs/site.css.695705106722" type="text/css">
+<script type="text/javascript" src="https://warwick.ac.uk/static_war/render/id7/js/id7-bundle-render.js.146613653449"></script>
+<script type="text/javascript" src="https://warwick.ac.uk/static_site/fac/sci/dcs/site.js.228251723829"></script>
+<script type="text/javascript">
+    SitebuilderInfo.url = '/fac/sci/dcs/teaching/material/cs131/part2';
+    SitebuilderInfo.lastUpdated = 1613125238407;
+    SitebuilderInfo.lastContentUpdated = 1613125238407;
+    SitebuilderInfo.buildTimestamp = '1613647620432';
+</script>
+<link rel="alternate" type="application/rss+xml" title="Changes in /fac/sci/dcs/ (RSS 2.0)" href="https://warwick.ac.uk/sitebuilder2/api/rss/siteChanges.rss?page=/fac/sci/dcs">
+<script type="text/javascript">
+Event.onDOMReady(function() { var email314709186 = '<a';
+email314709186 += ' href=';
+email314709186 += '"mailt';
+email314709186 += 'o:&#x6';
+email314709186 += '3;&#111;&';
+email314709186 += '#10';
+email314709186 += '9;';
+email314709186 += '&#112;&#45;&#x73;&#x63;&#x69;&#64;&#x64;&#99;&#115;&#x2e;&#119;';
+email314709186 += '&#97;&#x72;&#x77;&#x6';
+email314709186 += '9;&#9';
+email314709186 += '9;&#107;&#x2e;&#97;&#x63;&';
+email314709186 += '#46;&#x75;&#107;';
+email314709186 += '">&#99;';
+email314709186 += '&#111';
+email314709186 += ';&#x6d;&#x70;&';
+email314709186 += '#x2d;&#x73;&#99;&#105;&#64;&#100;&#99;';
+email314709186 += '&#x73;&#x2e;&#x77;&';
+email314709186 += '#97;&#x72;';
+email314709186 += '&#';
+email314709186 += '119;&#105;&#x6';
+email314709186 += '3;';
+email314709186 += '&#x6b;&#x2e;&#97;&#x63;&#x';
+email314709186 += '2e;&#';
+email314709186 += '117;&#107;<\/a>';
+if(document.getElementById('email314709186')) document.getElementById('email314709186').innerHTML = email314709186;
+});
+</script>
+<script async src="https://static.hotjar.com/c/hotjar-762048.js?sv=6"></script>
+<script async src="https://script.hotjar.com/modules.851cc60e98a814a7bf2d.js" charset="utf-8"></script>
+<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/617928580/?random=1613725845662&amp;cv=9&amp;fst=1613725845662&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1848&amp;u_cd=24&amp;u_his=6&amp;u_tz=0&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa2a1&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart2&amp;tiba=Part%202&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<script src="https://ssl.google-analytics.com/ga.js" type="text/javascript" async></script>
+<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55N43RF&amp;advertisingPermission=true&amp;functionalPermission=true&amp;performancePermission=true" height="0" width="0" style="display:none;visibility:hidden"></iframe> 
+</noscript>
+<div class="id7-left-border"></div>
+<div class="id7-fixed-width-container"> 
+ <div id="covid-19-banner" class="global-info-banner"> <a class="large" href="https://warwick.ac.uk/coronavirus"> Coronavirus (Covid-19): Latest updates and information </a> 
+ </div> <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> <a class="sr-only sr-only-focusable" href="#primary-nav" accesskey="N">Skip to navigation</a> 
+ <header class="id7-page-header"> 
+  <div class="id7-utility-masthead"> 
+   <nav class="id7-utility-bar" aria-label="Utility bar"> 
+    <ul> 
+     <li id="cookie-preference-link"><a href="https://warwick.ac.uk/sitebuilder2/user/cookiepreference/edit.htm?returnTo=/fac/sci/dcs/teaching/material/cs131/part2/" rel="nofollow" class="ut">Cookie preferences</a> </li> 
+     <li id="notify-link"><a href="https://warwick.ac.uk/sitebuilder2/user/page/notifications.htm?page=/fac/sci/dcs/teaching/material/cs131/part2/" rel="nofollow" class="ut">Notify</a> </li> 
+     <li id="account-link" data-hj-suppress=""><a href="https://websignon.warwick.ac.uk/origin/logout?target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart2" rel="nofollow" class="ut" data-toggle="id7:account-popover" data-loginlink="https://websignon.warwick.ac.uk/origin/slogin?shire=https%3A%2F%2Fwarwick.ac.uk%2Fsitebuilder2%2Fshire-read&amp;providerId=urn%3Awarwick.ac.uk%3Asitebuilder2%3Aread%3Aservice&amp;target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart2" data-usercode="u2003834" data-name="Rahul Vanmali" data-original-title="" title="" aria-expanded="false">Rahul Vanmali<span class="fa-stack id7-notifications-badge animating"> <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i> <strong class="fa-stack-1x fa brand-text counter-value slideInDown" title="Notifications">1</strong> <span class="sr-only">notifications</span> </span><span class="caret"></span></a> </li> 
+    </ul> 
+   </nav> 
+   <div class="id7-masthead"> 
+    <div class="id7-masthead-contents"> 
+     <div class="clearfix"> 
+      <div class="id7-logo-column"> 
+       <div class="id7-logo-row"> 
+        <div class="id7-logo"> <a href="https://warwick.ac.uk/" title="University of Warwick homepage"> <img src="https://warwick.ac.uk/static_war/render/id7/images/shim.gif.394887852338" alt="University of Warwick homepage" width="160" height="80"> </a> 
+        </div> 
+        <nav class="id7-site-links" aria-label="Site links"> 
+         <ul> 
+          <li><a href="https://warwick.ac.uk/study">Study</a></li> 
+          <li><a href="https://warwick.ac.uk/research">Research</a></li> 
+          <li><a href="https://warwick.ac.uk/business">Business</a></li> 
+          <li><a href="https://warwick.ac.uk/alumni">Alumni</a></li> 
+          <li><a href="https://warwick.ac.uk/news">News</a></li> 
+          <li><a href="https://warwick.ac.uk/engagement">Engagement</a></li> 
+         </ul> 
+        </nav> 
+       </div> 
+      </div> 
+      <div class="id7-search-column"> 
+       <div class="id7-search"> 
+        <form action="//search.warwick.ac.uk/website" role="search"> 
+         <input type="hidden" name="source" value="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part2/"> 
+         <div class="form-group"> 
+          <div class="id7-search-box-container floating-label" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="gen-id-100000"> 
+           <input type="search" class="form-control input-lg" id="id7-search-box" name="q" placeholder="Search Warwick" data-suggest="go" aria-label="Search Warwick" autocomplete="off" aria-autocomplete="list" aria-controls="gen-id-100000"> 
+           <ul class="typeahead dropdown-menu" role="listbox" aria-label="Search results" style="top: 46px; left: 0px; display: none;" id="gen-id-100000"></ul> 
+           <div class="sr-only" role="status" aria-live="polite"></div> <label for="id7-search-box">Search Warwick</label> <button type="submit" class="search-button"><span class="sr-only">Search</span><i class="fas fa-search fa-2x" aria-hidden="true"></i></button> 
+          </div> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="id7-header-text clearfix" style="height: 54px;"> 
+      <h1 class="affix-top headroom"> <span class="id7-current-site-link visible-xs-inline"> <a title="Computer Science home page [1]" href="/fac/sci/dcs/">DCS</a> </span><span class="id7-current-site-link hidden-xs"> <a accesskey="1" title="Computer Science home page [1]" href="/fac/sci/dcs/">Department of Computer Science</a> </span> </h1> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-navigation affix-top headroom" id="primary-nav"> 
+   <nav class="navbar navbar-primary hidden-xs" role="navigation" aria-label="Primary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="first dropdown" data-lastmodified="1612431350392"> <a href="/fac/sci/dcs/admissions/" data-page-url="/fac/sci/dcs/admissions/" data-toggle="dropdown" aria-haspopup="true">Admissions</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Admissions</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/undergraduate/" data-page-url="/fac/sci/dcs/admissions/undergraduate/">Undergraduate</a> </li> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/postgraduate/" data-page-url="/fac/sci/dcs/admissions/postgraduate/">Postgraduate Taught</a> </li> 
+       <li data-lastmodified="1612430903555" role="menuitem"> <a href="/fac/sci/dcs/admissions/degree_apprenticeships/" data-page-url="/fac/sci/dcs/admissions/degree_apprenticeships/">Degree Apprenticeships</a> </li> 
+      </ul> </li> 
+     <li class="next-secondary active second dropdown" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/" data-toggle="dropdown" aria-haspopup="true">Teaching</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Teaching</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/coronavirus/" data-page-url="/fac/sci/dcs/teaching/coronavirus/">Coronavirus<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/selfisolation/" data-page-url="/fac/sci/dcs/teaching/selfisolation/">DCS Self Isolation Notification</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/studentsupportappointments/" data-page-url="/fac/sci/dcs/teaching/studentsupportappointments/">Student Support Appointment Booking Form</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/courses/" data-page-url="/fac/sci/dcs/teaching/courses/">Course Structures</a> </li> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/handbook/" data-page-url="/fac/sci/dcs/teaching/handbook/">Student Handbook<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/modules/" data-page-url="/fac/sci/dcs/teaching/modules/">Modules Taught</a> </li> 
+       <li class="protected recently-updated" data-lastmodified="1613513785369" role="menuitem"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+      </ul> </li> 
+     <li class="dropdown" data-lastmodified="1610537109578"> <a href="/fac/sci/dcs/research/" data-page-url="/fac/sci/dcs/research/" data-toggle="dropdown" aria-haspopup="true">Research</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Research</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/doctoralstudies/" data-page-url="/fac/sci/dcs/research/doctoralstudies/">Doctoral Studies</a> </li> 
+       <li class="recently-updated" data-lastmodified="1613491957724" role="menuitem"> <a href="/fac/sci/dcs/research/research-interdisc/" data-page-url="/fac/sci/dcs/research/research-interdisc/">Interdisciplinary Research Centres</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/impact/" data-page-url="/fac/sci/dcs/research/impact/">Impact and Innovation</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ac/" data-page-url="/fac/sci/dcs/research/ac/">Applied Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ai/" data-page-url="/fac/sci/dcs/research/ai/">Artificial Intelligence</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/datascience/" data-page-url="/fac/sci/dcs/research/datascience/">Data Science</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/hcc/" data-page-url="/fac/sci/dcs/research/hcc/">Human Centred Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/systems/" data-page-url="/fac/sci/dcs/research/systems/">Systems and Security</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/focs/" data-page-url="/fac/sci/dcs/research/focs/">Theory and Foundations</a> </li> 
+      </ul> </li> 
+     <li data-lastmodified="1610979242144"> <a href="/fac/sci/dcs/people/" data-page-url="/fac/sci/dcs/people/">People</a></li> 
+     <li data-lastmodified="1613046125664"> <a href="/fac/sci/dcs/news/" data-page-url="/fac/sci/dcs/news/">News</a></li> 
+     <li class="dropdown" data-lastmodified="1612704558717"> <a href="/fac/sci/dcs/events/" data-page-url="/fac/sci/dcs/events/" data-toggle="dropdown" aria-haspopup="true">Events</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Events</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1611775499228" role="menuitem"> <a href="/fac/sci/dcs/events/colloquia/" data-page-url="/fac/sci/dcs/events/colloquia/">Computer Science Colloquium</a> </li> 
+      </ul> </li> 
+     <li class="recently-updated" data-lastmodified="1613639149032"> <a href="/fac/sci/dcs/jobs/" data-page-url="/fac/sci/dcs/jobs/">Vacancies</a></li> 
+     <li class="protected" data-lastmodified="1613033396423"> <a href="/fac/sci/dcs/intranet/" data-page-url="/fac/sci/dcs/intranet/">Intranet<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+   <nav class="navbar navbar-secondary" role="navigation" aria-label="Secondary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="nav-breadcrumb first" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/">Teaching</a></li> 
+     <li class="nav-breadcrumb second protected recently-updated" data-lastmodified="1613513785369"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="nav-breadcrumb protected recently-updated" data-lastmodified="1613561700740"> <a href="/fac/sci/dcs/teaching/material/cs131/" data-page-url="/fac/sci/dcs/teaching/material/cs131/">CS131<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="active nav-breadcrumb last protected recently-updated" data-lastmodified="1613125238407"> <a tabindex="0" data-page-url="/fac/sci/dcs/teaching/material/cs131/part2/">Part 2<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+  </div> 
+  <div class="id7-navigation-marker" style="height: 69.1875px;"></div> 
+ </header> 
+ <main id="main" class="id7-main-content-area"> 
+  <header> 
+   <div class="id7-horizontal-divider"> 
+    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" width="1130" height="41" viewbox="0, 0, 1130, 41"> <path d="m 0,0.5 1030.48, 0 22.8,40 16.96,-31.4 16.96,31.4 22.8,-40 20,0" class="divider" stroke="#383838" fill="none"></path> 
+    </svg> 
+   </div> 
+   <div class="id7-page-title"> 
+    <h1> Part 2 </h1> 
+   </div> 
+  </header> 
+  <div class="id7-main-content"> 
+   <div class="layout layout-75-25"> 
+    <div class="column-1"> 
+     <div class="column-1-content"> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 2 cont'd (lectures 5 and 6, see lecture 4 in Part 1)</strong> </p> 
+       <ul> 
+        <li>VECTORS (intro) <a href="https://web.microsoftstream.com/video/8e66acd1-e46a-4398-82cd-9db9a9bba1e7">Lecture 5 (video)</a> | <a href="vectors.pdf">Slides 5</a> || <a href="note4.pdf"><strong>Notes 4 (Vectors intro)</strong></a> </li> 
+        <li>VECTORS (Linear combinations and subspaces) <a href="https://web.microsoftstream.com/video/3877792c-7333-4dee-8ece-c1bb3b53a4e4">Lecture 6 (video)</a> | <a href="lecture6.pdf">Slides 6</a> || <a href="note5.pdf"><strong>Notes 5</strong></a> </li> 
+       </ul> 
+       <p><em>Synchronous session: </em><a href="synchronous_session_2.pdf">Slides</a> | <a href="https://web.microsoftstream.com/video/bfa7f219-cf4b-4ad6-b068-63553e41c763">Video</a> </p> 
+      </div> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 3: (lectures 7-9)</strong> </p> 
+       <ul> 
+        <li>LINEAR INDEPENDENCE <a href="https://web.microsoftstream.com/video/903b0045-74ec-496e-9295-a6b200b87010">Lecture 7.1 (video)</a> | <a href="lecture7_1.pdf">Slides 7.1</a> || <a href="note6.pdf"><strong>Notes 6</strong></a> </li> 
+        <li>BASIS and DIMENSION <a href="https://web.microsoftstream.com/video/bd20a014-3ff1-4622-98ae-9fc01b6f9015">Lecture 7.2 (video)</a> | <a href="lecture7_2.pdf">Slides 7.2</a> || <a href="https://web.microsoftstream.com/video/557afed6-866b-453b-9315-73210d93fe16">Lecture 8 (video)</a> | <a href="lecture8.pdf">Slides 8</a> || <a href="note7.pdf"><strong>Notes 7</strong></a> </li> 
+        <li>MATRIX ALGEBRA (intro) <a href="https://web.microsoftstream.com/video/2baa9c46-6f72-4a2f-82de-6c3a8393ce93">Lecture 9 (video)</a> | <a href="lecture9.pdf">Slides 9</a> || <a href="note8.pdf"><strong>Notes 8</strong></a> </li> 
+       </ul> 
+       <p><em>Synchronous session: </em><a href="synchronous_session_3.pdf">Whiteboard notes</a> | <a href="https://web.microsoftstream.com/video/3a74af15-542b-4afa-ac62-30c6590e2d4d">Video</a><em> | </em><a href="https://web.microsoftstream.com/video/3966c3a0-e26e-40d2-bffd-4d947e63577c">Questions from chat (video)</a> </p> 
+      </div> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 4: (lectures 10-12)</strong> </p> 
+       <ul> 
+        <li>MATRIX INVERSE, LINEAR EQUATIONS <a href="https://web.microsoftstream.com/video/bd093dc6-2a23-4fa3-b7d9-442ee57bf0b5">Lecture 10 (video)</a> | <a href="lecture_10.pdf">Slides 10</a> | <a href="note9.pdf"><strong>Notes 9</strong></a> (notes on matrix inverse are incorporated in Notes 8)</li> 
+        <li>DETERMINANTS, MATRIX INVERSE cont. <a href="https://web.microsoftstream.com/video/3de91d22-80f7-4f96-b6f2-08ce8cf83dbe">Lecture 11 (video)</a> | <a href="lecture_11.pdf">Slides 11</a> | <strong><a href="note10.pdf">Notes 10</a></strong> </li> 
+        <li>DETERMINANTS cont. <a href="https://web.microsoftstream.com/video/6936eed9-8a18-45ed-87c5-28b91d05e518">Lecture 12 (video)</a> | <a href="lecture_12.pdf">Slides 12</a> | <a href="note11.pdf"><strong>Notes 11</strong></a> </li> 
+       </ul> 
+       <p><em>Synchronous session: </em><a href="synchronous_session_4.pdf">Whiteboard notes</a> | <a href="https://web.microsoftstream.com/video/d1c98140-9186-44dc-9a1c-6eb6ffbe8b97">Video</a> | <a href="synch_4_questions.pdf">Addressing questions (pdf)</a> </p> 
+      </div> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 5 (lecture 13-15)</strong> </p> 
+       <ul> 
+        <li>LINEAR TRANSFORMATIONS (intro) <a href="https://web.microsoftstream.com/video/c8a482eb-ccb4-4c70-838d-23500e8222f8">Lecture 13 (video)</a> | <a href="lecture_13.pdf">Slides 13</a> | <a href="note12.pdf"><strong>Notes 12</strong></a> </li> 
+        <li>MATRICES AND LINEAR TRANSFORMATIONS <a href="https://web.microsoftstream.com/video/bd75a39f-b836-4396-b175-4014ddbee160">Lecture 14 (video)</a> | <a href="lecture_14.pdf">Slides 14</a> | <strong><a href="note13.pdf">Notes 13</a></strong> </li> 
+        <li>EIGENVALUES, EIGENVECTORS <a href="https://web.microsoftstream.com/video/11a80b92-38e8-488e-934c-216583b89bfc">Lecture 15 (video)</a> | <a href="lecture_15.pdf">Slides 15</a> | <a href="note14.pdf"><strong>Notes 14</strong></a> </li> 
+       </ul> 
+       <p><em>Synchronous session: </em><a href="synchronous_session_5.pdf">Whiteboard notes</a><em> | </em><a href="https://web.microsoftstream.com/video/f8a70b8d-faa4-41b2-ac81-1e18aeaa5eca">Video</a><em><br> </em> </p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="column-2"> 
+     <div class="column-2-content"> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </main> 
+ <footer class="id7-page-footer id7-footer-coloured"> 
+  <div class="id7-site-footer"> 
+   <div class="id7-site-footer-content"> 
+    <div class="row "> 
+     <div class="col-sm-6"> 
+      <p>Department of Computer Science, <br> University of Warwick, CV4 7AL <br> E-mail: <span id="email314709186"><a href="mailto:comp-sci@dcs.warwick.ac.uk">comp-sci@dcs.warwick.ac.uk</a></span>, <br> Telephone: <a href="tel:+442476523193">+44 (0)24 7652 3193</a> </p> 
+     </div> 
+     <div class="col-sm-6"> 
+      <div class="pull-right"> <a href="/fac/sci/dcs/intranet" class="btn btn-primary">DCS Intranet </a> <a href="/fac/sci/dcs/people/athena-swan/"><img src="/fac/sci/dcs/athena-swan-bronze-100.png" alt="Athena Swan HE Charter Bronze Award logo" border="0"></a> <a href="https://www.facebook.com/warwickdcs/" aria-label="DCS on Facebook"><i class="fa fa-facebook fa-3x fa-fw"></i><span class="sr-only">Facebook</span></a><a href="https://twitter.com/WarwickDCS" aria-label="DCS on Twitter"><i class="fa fa-twitter fa-3x fa-fw"></i><span class="sr-only">Twitter</span></a><a href="https://www.linkedin.com/groups/38372/" aria-label="DCS on LinkedIn"><i class="fa fa-linkedin fa-3x fa-fw"></i><span class="sr-only">LinkedIn</span></a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-app-footer"> 
+   <div class="id7-app-footer-content"> 
+    <div class="id7-logo-bleed"></div> 
+    <div id="page-footer-elements" class="nofollow clearfix page-footer-elements">
+      Page contact: <a id="email-owner-link" href="/sitebuilder2/api/ajax/emailOwner.htm?page=%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart2" class="no-print-expand" title="Send an email to Yulia Timofeeva" rel="nofollow">Yulia Timofeeva</a> 
+     <br> Last revised: Fri 12 Feb 2021 
+    </div> 
+    <div class="id7-footer-utility"> 
+     <ul> 
+      <li id="powered-by-link"> Powered by <a href="https://warwick.ac.uk/sitebuilder" title="More information about SiteBuilder">Sitebuilder</a> </li> 
+      <li id="copyright-link"><a href="http://warwick.ac.uk/copyright" title="Copyright Statement">© MMXXI</a></li> 
+      <li id="terms-link"><a href="http://warwick.ac.uk/terms/general" title="Terms of use">Terms</a></li> 
+      <li id="privacy-link"><a href="http://warwick.ac.uk/privacy" title="Privacy notice">Privacy</a></li> 
+      <li id="cookies-link"><a href="http://warwick.ac.uk/cookies" title="Information about cookies">Cookies</a></li> 
+      <li id="accessibility-link"><a href="https://warwick.ac.uk/accessibility" title="Accessibility information [0]" accesskey="0">Accessibility</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+ </footer> 
+</div>
+<div class="id7-right-border"></div><!-- New analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('require', 'linkid', 'linkid.js');
+    
+    
+    
+    ga('create', 'UA-40911470-1', 'auto', 'global1');
+    ga('global1.set', 'anonymizeIp', true);
+    ga('global1.send', 'pageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part2');
+    
+    
+    
+    
+    
+        
+        
+    var _gaq = _gaq || [];
+    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+    _gaq.push(['site._setAccount', 'UA-27588828-1']);
+    _gaq.push(['site._trackPageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part2']);
+    _gaq.push(['site._trackPageLoadTime']);
+    
+    var analyticsLoad = function() {
+        var s    = document.createElement('script');
+        s.src    = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.type   = "text/javascript";
+        s.async  = true;
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
+    };
+    if (window.Event && Event.observe) {
+        Event.observe(window, 'load', analyticsLoad);
+    } else {
+        var oldLoad = window.onload;
+        window.onload = function() {
+            if (typeof oldLoad == 'function') oldLoad();
+            analyticsLoad();
+        };
+    }
+        
+    
+    
+    </script>
+<div class="cookie-preference-modal-container"></div>
+<div class="statuspage-embed-container" data-api-base="https://status.warwick.ac.uk/api" data-components="[&quot;j9ksmwrhqs9v&quot;, &quot;fzcttzffk1j0&quot;, &quot;lyljzmdxg3yg&quot;, &quot;qkfm31zsq8c5&quot;]"> 
+ <div class="StatusPageEmbed StatusPageEmbed--bl StatusPageEmbed--none  "> 
+  <div class="StatusPageEmbed__icon"></div> 
+  <div class="StatusPageEmbed__content"> 
+   <h1 class="StatusPageEmbed__content__title">All Systems Operational</h1> 
+   <div class="StatusPageEmbed__content__context"></div> 
+  </div> 
+  <div class="StatusPageEmbed__close"> <button class="StatusPageEmbed__close__button" aria-label="Close" tabindex="-1"><i class="fas fa-times" aria-hidden="true"></i></button> 
+  </div> 
+ </div> 
+</div>
+<script async type="module" src="https://warwick.ac.uk/static_war/render/statuspage-widget/main.js.258593508940"></script>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:762048,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+<script type="text/javascript" id="">(function(a){a(document).ready(function(){a("#account-link").attr("data-hj-suppress","")})})(window.jQuery);</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","571252266361666");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=571252266361666&amp;ev=PageView
+&amp;noscript=1"> 
+</noscript>
+<div style="display: none; visibility: hidden;"> 
+ <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","313343962900596");fbq("track","PageView");</script> 
+ <noscript></noscript> 
+</div>
+<script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-617928580"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","288117859005643");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=288117859005643&amp;ev=PageView&amp;noscript=1"> 
+</noscript>
+<img src="https://ib.adnxs.com/seg?add=24365203&amp;t=2" width="1" height="1">
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-617928580");</script>
+<div class="modal image-modal" id="image-modal" role="dialog" aria-modal="true"> 
+ <div class="modal-dialog"> 
+  <div class="modal-content"> 
+   <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+    <h4 class="modal-title">&nbsp;</h4> 
+   </div> 
+   <div class="modal-body"></div> 
+   <div style="line-height: normal; text-align: left;" class="modal-footer"></div><i class="image-controls left fa fa-chevron-left fa-2x"></i><i class="image-controls right fa fa-chevron-right fa-2x"></i> 
+  </div> 
+ </div> 
+</div>
+<base href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part3/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part 3</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script>
+<script type="text/javascript" async src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+<script src="https://connect.facebook.net/signals/config/288117859005643?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/313343962900596?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/571252266361666?v=2.9.33&amp;r=stable" async></script>
+<script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-55N43RF"></script>
+<script>
+  var dataLayer = [];
+  var gtmData = {};
+
+  
+    gtmData.advertisingPermission = true;
+    gtmData.performancePermission = true;
+    gtmData.functionalPermission = true;
+  
+  gtmData.analyticsPageUrl = '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part3';
+
+  dataLayer.push(gtmData);
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document, 'script','dataLayer', 'GTM-55N43RF');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Warwick Search" href="//search.warwick.ac.uk/static/search/osd.xml"><!-- Google canonical URL - the main URL for this page -->
+<link rel="canonical" href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part3/">
+<meta name="robots" content="noindex,nofollow">
+<link rel="apple-touch-icon" sizes="57x57" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-57x57.png.595542567195">
+<link rel="apple-touch-icon" sizes="60x60" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-60x60.png.493371741217">
+<link rel="apple-touch-icon" sizes="72x72" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-72x72.png.203424194728">
+<link rel="apple-touch-icon" sizes="76x76" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-76x76.png.247553332752">
+<link rel="apple-touch-icon" sizes="114x114" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-114x114.png.843902449578">
+<link rel="apple-touch-icon" sizes="120x120" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-120x120.png.333863844977">
+<link rel="apple-touch-icon" sizes="144x144" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-144x144.png.552887115038">
+<link rel="apple-touch-icon" sizes="152x152" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-152x152.png.175734862673">
+<link rel="apple-touch-icon" sizes="180x180" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-180x180.png.240072141587">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-32x32.png.165918197265" sizes="32x32">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/android-chrome-192x192.png.336101619978" sizes="192x192">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-96x96.png.276161049719" sizes="96x96">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-16x16.png.207301322891" sizes="16x16">
+<meta name="msapplication-TileImage" content="https://warwick.ac.uk/static_war/render/id7/images/mstile-144x144.png.116582949768">
+<meta name="msapplication-TileColor" content="#00407A">
+<meta name="theme-color" content="#00407A"><!-- Pre-connect to Google Fonts domain -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;subset=latin,latin-ext&amp;display=optional" rel="stylesheet" as="style" type="text/css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"><!-- Pre-load FontAwesome Pro font files. Browsers supporting link[rel="preload"] all support woff2 -->
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-light-300.woff2.251483538349" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-regular-400.woff2.792461908222" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-solid-900.woff2.324325500111" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-brands-400.woff2.150834009277" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-duotone-900.woff2.146310607822" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/id7/css/pack7.css.333597196295" type="text/css"><!-- Pre-load the statuspage CSS, then after the page finishes loading, parse it -->
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/statuspage-widget/main.css.160527713577" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="shortcut icon" type="image/x-icon" href="https://warwick.ac.uk/static_war/render/id7/images/favicon.ico.214665304133">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_site/fac/sci/dcs/site.css.695705106722" type="text/css">
+<script type="text/javascript" src="https://warwick.ac.uk/static_war/render/id7/js/id7-bundle-render.js.146613653449"></script>
+<script type="text/javascript" src="https://warwick.ac.uk/static_site/fac/sci/dcs/site.js.228251723829"></script>
+<script type="text/javascript">
+    SitebuilderInfo.url = '/fac/sci/dcs/teaching/material/cs131/part3';
+    SitebuilderInfo.lastUpdated = 1613638743735;
+    SitebuilderInfo.lastContentUpdated = 1613638743735;
+    SitebuilderInfo.buildTimestamp = '1613647620432';
+</script>
+<link rel="alternate" type="application/rss+xml" title="Changes in /fac/sci/dcs/ (RSS 2.0)" href="https://warwick.ac.uk/sitebuilder2/api/rss/siteChanges.rss?page=/fac/sci/dcs">
+<script type="text/javascript">
+Event.onDOMReady(function() { var email314709186 = '<a';
+email314709186 += ' href=';
+email314709186 += '"mailt';
+email314709186 += 'o:&#x6';
+email314709186 += '3;&#111;&';
+email314709186 += '#10';
+email314709186 += '9;';
+email314709186 += '&#112;&#45;&#x73;&#x63;&#x69;&#64;&#x64;&#99;&#115;&#x2e;&#119;';
+email314709186 += '&#97;&#x72;&#x77;&#x6';
+email314709186 += '9;&#9';
+email314709186 += '9;&#107;&#x2e;&#97;&#x63;&';
+email314709186 += '#46;&#x75;&#107;';
+email314709186 += '">&#99;';
+email314709186 += '&#111';
+email314709186 += ';&#x6d;&#x70;&';
+email314709186 += '#x2d;&#x73;&#99;&#105;&#64;&#100;&#99;';
+email314709186 += '&#x73;&#x2e;&#x77;&';
+email314709186 += '#97;&#x72;';
+email314709186 += '&#';
+email314709186 += '119;&#105;&#x6';
+email314709186 += '3;';
+email314709186 += '&#x6b;&#x2e;&#97;&#x63;&#x';
+email314709186 += '2e;&#';
+email314709186 += '117;&#107;<\/a>';
+if(document.getElementById('email314709186')) document.getElementById('email314709186').innerHTML = email314709186;
+});
+</script>
+<script async src="https://static.hotjar.com/c/hotjar-762048.js?sv=6"></script>
+<script async src="https://script.hotjar.com/modules.851cc60e98a814a7bf2d.js" charset="utf-8"></script>
+<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/617928580/?random=1613725846187&amp;cv=9&amp;fst=1613725846187&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1848&amp;u_cd=24&amp;u_his=7&amp;u_tz=0&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa2a1&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart3&amp;tiba=Part%203&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<script src="https://ssl.google-analytics.com/ga.js" type="text/javascript" async></script>
+<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55N43RF&amp;advertisingPermission=true&amp;functionalPermission=true&amp;performancePermission=true" height="0" width="0" style="display:none;visibility:hidden"></iframe> 
+</noscript>
+<div class="id7-left-border"></div>
+<div class="id7-fixed-width-container"> 
+ <div id="covid-19-banner" class="global-info-banner"> <a class="large" href="https://warwick.ac.uk/coronavirus"> Coronavirus (Covid-19): Latest updates and information </a> 
+ </div> <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> <a class="sr-only sr-only-focusable" href="#primary-nav" accesskey="N">Skip to navigation</a> 
+ <header class="id7-page-header"> 
+  <div class="id7-utility-masthead"> 
+   <nav class="id7-utility-bar" aria-label="Utility bar"> 
+    <ul> 
+     <li id="cookie-preference-link"><a href="https://warwick.ac.uk/sitebuilder2/user/cookiepreference/edit.htm?returnTo=/fac/sci/dcs/teaching/material/cs131/part3/" rel="nofollow" class="ut">Cookie preferences</a> </li> 
+     <li id="notify-link"><a href="https://warwick.ac.uk/sitebuilder2/user/page/notifications.htm?page=/fac/sci/dcs/teaching/material/cs131/part3/" rel="nofollow" class="ut">Notify</a> </li> 
+     <li id="account-link" data-hj-suppress=""><a href="https://websignon.warwick.ac.uk/origin/logout?target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart3" rel="nofollow" class="ut" data-toggle="id7:account-popover" data-loginlink="https://websignon.warwick.ac.uk/origin/slogin?shire=https%3A%2F%2Fwarwick.ac.uk%2Fsitebuilder2%2Fshire-read&amp;providerId=urn%3Awarwick.ac.uk%3Asitebuilder2%3Aread%3Aservice&amp;target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart3" data-usercode="u2003834" data-name="Rahul Vanmali" data-original-title="" title="" aria-expanded="false">Rahul Vanmali<span class="fa-stack id7-notifications-badge animating"> <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i> <strong class="fa-stack-1x fa brand-text counter-value slideInDown" title="Notifications">1</strong> <span class="sr-only">notifications</span> </span><span class="caret"></span></a> </li> 
+    </ul> 
+   </nav> 
+   <div class="id7-masthead"> 
+    <div class="id7-masthead-contents"> 
+     <div class="clearfix"> 
+      <div class="id7-logo-column"> 
+       <div class="id7-logo-row"> 
+        <div class="id7-logo"> <a href="https://warwick.ac.uk/" title="University of Warwick homepage"> <img src="https://warwick.ac.uk/static_war/render/id7/images/shim.gif.394887852338" alt="University of Warwick homepage" width="160" height="80"> </a> 
+        </div> 
+        <nav class="id7-site-links" aria-label="Site links"> 
+         <ul> 
+          <li><a href="https://warwick.ac.uk/study">Study</a></li> 
+          <li><a href="https://warwick.ac.uk/research">Research</a></li> 
+          <li><a href="https://warwick.ac.uk/business">Business</a></li> 
+          <li><a href="https://warwick.ac.uk/alumni">Alumni</a></li> 
+          <li><a href="https://warwick.ac.uk/news">News</a></li> 
+          <li><a href="https://warwick.ac.uk/engagement">Engagement</a></li> 
+         </ul> 
+        </nav> 
+       </div> 
+      </div> 
+      <div class="id7-search-column"> 
+       <div class="id7-search"> 
+        <form action="//search.warwick.ac.uk/website" role="search"> 
+         <input type="hidden" name="source" value="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part3/"> 
+         <div class="form-group"> 
+          <div class="id7-search-box-container floating-label" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="gen-id-100000"> 
+           <input type="search" class="form-control input-lg" id="id7-search-box" name="q" placeholder="Search Warwick" data-suggest="go" aria-label="Search Warwick" autocomplete="off" aria-autocomplete="list" aria-controls="gen-id-100000"> 
+           <ul class="typeahead dropdown-menu" role="listbox" aria-label="Search results" style="top: 46px; left: 0px; display: none;" id="gen-id-100000"></ul> 
+           <div class="sr-only" role="status" aria-live="polite"></div> <label for="id7-search-box">Search Warwick</label> <button type="submit" class="search-button"><span class="sr-only">Search</span><i class="fas fa-search fa-2x" aria-hidden="true"></i></button> 
+          </div> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="id7-header-text clearfix" style="height: 54px;"> 
+      <h1 class="affix-top headroom"> <span class="id7-current-site-link visible-xs-inline"> <a title="Computer Science home page [1]" href="/fac/sci/dcs/">DCS</a> </span><span class="id7-current-site-link hidden-xs"> <a accesskey="1" title="Computer Science home page [1]" href="/fac/sci/dcs/">Department of Computer Science</a> </span> </h1> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-navigation affix-top headroom" id="primary-nav"> 
+   <nav class="navbar navbar-primary hidden-xs" role="navigation" aria-label="Primary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="first dropdown" data-lastmodified="1612431350392"> <a href="/fac/sci/dcs/admissions/" data-page-url="/fac/sci/dcs/admissions/" data-toggle="dropdown" aria-haspopup="true">Admissions</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Admissions</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/undergraduate/" data-page-url="/fac/sci/dcs/admissions/undergraduate/">Undergraduate</a> </li> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/postgraduate/" data-page-url="/fac/sci/dcs/admissions/postgraduate/">Postgraduate Taught</a> </li> 
+       <li data-lastmodified="1612430903555" role="menuitem"> <a href="/fac/sci/dcs/admissions/degree_apprenticeships/" data-page-url="/fac/sci/dcs/admissions/degree_apprenticeships/">Degree Apprenticeships</a> </li> 
+      </ul> </li> 
+     <li class="next-secondary active second dropdown" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/" data-toggle="dropdown" aria-haspopup="true">Teaching</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Teaching</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/coronavirus/" data-page-url="/fac/sci/dcs/teaching/coronavirus/">Coronavirus<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/selfisolation/" data-page-url="/fac/sci/dcs/teaching/selfisolation/">DCS Self Isolation Notification</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/studentsupportappointments/" data-page-url="/fac/sci/dcs/teaching/studentsupportappointments/">Student Support Appointment Booking Form</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/courses/" data-page-url="/fac/sci/dcs/teaching/courses/">Course Structures</a> </li> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/handbook/" data-page-url="/fac/sci/dcs/teaching/handbook/">Student Handbook<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/modules/" data-page-url="/fac/sci/dcs/teaching/modules/">Modules Taught</a> </li> 
+       <li class="protected recently-updated" data-lastmodified="1613513785369" role="menuitem"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+      </ul> </li> 
+     <li class="dropdown" data-lastmodified="1610537109578"> <a href="/fac/sci/dcs/research/" data-page-url="/fac/sci/dcs/research/" data-toggle="dropdown" aria-haspopup="true">Research</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Research</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/doctoralstudies/" data-page-url="/fac/sci/dcs/research/doctoralstudies/">Doctoral Studies</a> </li> 
+       <li class="recently-updated" data-lastmodified="1613491957724" role="menuitem"> <a href="/fac/sci/dcs/research/research-interdisc/" data-page-url="/fac/sci/dcs/research/research-interdisc/">Interdisciplinary Research Centres</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/impact/" data-page-url="/fac/sci/dcs/research/impact/">Impact and Innovation</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ac/" data-page-url="/fac/sci/dcs/research/ac/">Applied Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ai/" data-page-url="/fac/sci/dcs/research/ai/">Artificial Intelligence</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/datascience/" data-page-url="/fac/sci/dcs/research/datascience/">Data Science</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/hcc/" data-page-url="/fac/sci/dcs/research/hcc/">Human Centred Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/systems/" data-page-url="/fac/sci/dcs/research/systems/">Systems and Security</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/focs/" data-page-url="/fac/sci/dcs/research/focs/">Theory and Foundations</a> </li> 
+      </ul> </li> 
+     <li data-lastmodified="1610979242144"> <a href="/fac/sci/dcs/people/" data-page-url="/fac/sci/dcs/people/">People</a></li> 
+     <li data-lastmodified="1613046125664"> <a href="/fac/sci/dcs/news/" data-page-url="/fac/sci/dcs/news/">News</a></li> 
+     <li class="dropdown" data-lastmodified="1612704558717"> <a href="/fac/sci/dcs/events/" data-page-url="/fac/sci/dcs/events/" data-toggle="dropdown" aria-haspopup="true">Events</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Events</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1611775499228" role="menuitem"> <a href="/fac/sci/dcs/events/colloquia/" data-page-url="/fac/sci/dcs/events/colloquia/">Computer Science Colloquium</a> </li> 
+      </ul> </li> 
+     <li class="recently-updated" data-lastmodified="1613639149032"> <a href="/fac/sci/dcs/jobs/" data-page-url="/fac/sci/dcs/jobs/">Vacancies</a></li> 
+     <li class="protected" data-lastmodified="1613033396423"> <a href="/fac/sci/dcs/intranet/" data-page-url="/fac/sci/dcs/intranet/">Intranet<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+   <nav class="navbar navbar-secondary" role="navigation" aria-label="Secondary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="nav-breadcrumb first" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/">Teaching</a></li> 
+     <li class="nav-breadcrumb second protected recently-updated" data-lastmodified="1613513785369"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="nav-breadcrumb protected recently-updated" data-lastmodified="1613561700740"> <a href="/fac/sci/dcs/teaching/material/cs131/" data-page-url="/fac/sci/dcs/teaching/material/cs131/">CS131<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="active nav-breadcrumb last protected recently-updated" data-lastmodified="1613638743735"> <a tabindex="0" data-page-url="/fac/sci/dcs/teaching/material/cs131/part3/">Part 3<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+  </div> 
+  <div class="id7-navigation-marker" style="height: 69.1875px;"></div> 
+ </header> 
+ <main id="main" class="id7-main-content-area"> 
+  <header> 
+   <div class="id7-horizontal-divider"> 
+    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" width="1130" height="41" viewbox="0, 0, 1130, 41"> <path d="m 0,0.5 1030.48, 0 22.8,40 16.96,-31.4 16.96,31.4 22.8,-40 20,0" class="divider" stroke="#383838" fill="none"></path> 
+    </svg> 
+   </div> 
+   <div class="id7-page-title"> 
+    <h1> Part 3 </h1> 
+   </div> 
+  </header> 
+  <div class="id7-main-content"> 
+   <div class="layout layout-75-25"> 
+    <div class="column-1"> 
+     <div class="column-1-content"> 
+      <div class="boxstyle_ box1"> 
+       <p><strong>Week 6: (lectures 16-18)</strong> </p> 
+       <ul> 
+        <li><strong>SEQUENCES (intro) </strong><a href="https://web.microsoftstream.com/video/be4ad469-3af0-40cf-bfd9-aec038fc0d37">Lecture16 (Video)</a> | <a href="lecture_16.pdf">Slides 16</a> || <a href="note15_part1.pdf"><strong>Notes 15</strong> </a> </li> 
+        <li><strong>SEQUENCES </strong>cont. <a href="https://web.microsoftstream.com/video/5dde2e98-6c75-4a95-97d9-82f40c746b80">Lecture 17.1 (Video)</a> | <a href="lecture_17a.pdf">Slides 17.1</a> ||</li> 
+       </ul> 
+       <p>NB (date 18 Feb): I will upload more lectures later this week, but it would be good to watch only two above before our session on Fri.</p> 
+      </div> 
+      <div class="boxstyle_ box1"> 
+       <ul> 
+        <li>Week 7: (lectures 19-21)</li> 
+       </ul> 
+      </div> 
+      <div class="boxstyle_ box1"></div> 
+     </div> 
+    </div> 
+    <div class="column-2"> 
+     <div class="column-2-content"> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </main> 
+ <footer class="id7-page-footer id7-footer-coloured"> 
+  <div class="id7-site-footer"> 
+   <div class="id7-site-footer-content"> 
+    <div class="row "> 
+     <div class="col-sm-6"> 
+      <p>Department of Computer Science, <br> University of Warwick, CV4 7AL <br> E-mail: <span id="email314709186"><a href="mailto:comp-sci@dcs.warwick.ac.uk">comp-sci@dcs.warwick.ac.uk</a></span>, <br> Telephone: <a href="tel:+442476523193">+44 (0)24 7652 3193</a> </p> 
+     </div> 
+     <div class="col-sm-6"> 
+      <div class="pull-right"> <a href="/fac/sci/dcs/intranet" class="btn btn-primary">DCS Intranet </a> <a href="/fac/sci/dcs/people/athena-swan/"><img src="/fac/sci/dcs/athena-swan-bronze-100.png" alt="Athena Swan HE Charter Bronze Award logo" border="0"></a> <a href="https://www.facebook.com/warwickdcs/" aria-label="DCS on Facebook"><i class="fa fa-facebook fa-3x fa-fw"></i><span class="sr-only">Facebook</span></a><a href="https://twitter.com/WarwickDCS" aria-label="DCS on Twitter"><i class="fa fa-twitter fa-3x fa-fw"></i><span class="sr-only">Twitter</span></a><a href="https://www.linkedin.com/groups/38372/" aria-label="DCS on LinkedIn"><i class="fa fa-linkedin fa-3x fa-fw"></i><span class="sr-only">LinkedIn</span></a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-app-footer"> 
+   <div class="id7-app-footer-content"> 
+    <div class="id7-logo-bleed"></div> 
+    <div id="page-footer-elements" class="nofollow clearfix page-footer-elements">
+      Page contact: <a id="email-owner-link" href="/sitebuilder2/api/ajax/emailOwner.htm?page=%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart3" class="no-print-expand" title="Send an email to Yulia Timofeeva" rel="nofollow">Yulia Timofeeva</a> 
+     <br> Last revised: Thu 18 Feb 2021 
+    </div> 
+    <div class="id7-footer-utility"> 
+     <ul> 
+      <li id="powered-by-link"> Powered by <a href="https://warwick.ac.uk/sitebuilder" title="More information about SiteBuilder">Sitebuilder</a> </li> 
+      <li id="copyright-link"><a href="http://warwick.ac.uk/copyright" title="Copyright Statement">© MMXXI</a></li> 
+      <li id="terms-link"><a href="http://warwick.ac.uk/terms/general" title="Terms of use">Terms</a></li> 
+      <li id="privacy-link"><a href="http://warwick.ac.uk/privacy" title="Privacy notice">Privacy</a></li> 
+      <li id="cookies-link"><a href="http://warwick.ac.uk/cookies" title="Information about cookies">Cookies</a></li> 
+      <li id="accessibility-link"><a href="https://warwick.ac.uk/accessibility" title="Accessibility information [0]" accesskey="0">Accessibility</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+ </footer> 
+</div>
+<div class="id7-right-border"></div><!-- New analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('require', 'linkid', 'linkid.js');
+    
+    
+    
+    ga('create', 'UA-40911470-1', 'auto', 'global1');
+    ga('global1.set', 'anonymizeIp', true);
+    ga('global1.send', 'pageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part3');
+    
+    
+    
+    
+    
+        
+        
+    var _gaq = _gaq || [];
+    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+    _gaq.push(['site._setAccount', 'UA-27588828-1']);
+    _gaq.push(['site._trackPageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part3']);
+    _gaq.push(['site._trackPageLoadTime']);
+    
+    var analyticsLoad = function() {
+        var s    = document.createElement('script');
+        s.src    = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.type   = "text/javascript";
+        s.async  = true;
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
+    };
+    if (window.Event && Event.observe) {
+        Event.observe(window, 'load', analyticsLoad);
+    } else {
+        var oldLoad = window.onload;
+        window.onload = function() {
+            if (typeof oldLoad == 'function') oldLoad();
+            analyticsLoad();
+        };
+    }
+        
+    
+    
+    </script>
+<div class="cookie-preference-modal-container"></div>
+<div class="statuspage-embed-container" data-api-base="https://status.warwick.ac.uk/api" data-components="[&quot;j9ksmwrhqs9v&quot;, &quot;fzcttzffk1j0&quot;, &quot;lyljzmdxg3yg&quot;, &quot;qkfm31zsq8c5&quot;]"> 
+ <div class="StatusPageEmbed StatusPageEmbed--bl StatusPageEmbed--none  "> 
+  <div class="StatusPageEmbed__icon"></div> 
+  <div class="StatusPageEmbed__content"> 
+   <h1 class="StatusPageEmbed__content__title">All Systems Operational</h1> 
+   <div class="StatusPageEmbed__content__context"></div> 
+  </div> 
+  <div class="StatusPageEmbed__close"> <button class="StatusPageEmbed__close__button" aria-label="Close" tabindex="-1"><i class="fas fa-times" aria-hidden="true"></i></button> 
+  </div> 
+ </div> 
+</div>
+<script async type="module" src="https://warwick.ac.uk/static_war/render/statuspage-widget/main.js.258593508940"></script>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:762048,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+<script type="text/javascript" id="">(function(a){a(document).ready(function(){a("#account-link").attr("data-hj-suppress","")})})(window.jQuery);</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","571252266361666");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=571252266361666&amp;ev=PageView
+&amp;noscript=1"> 
+</noscript>
+<div style="display: none; visibility: hidden;"> 
+ <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","313343962900596");fbq("track","PageView");</script> 
+ <noscript></noscript> 
+</div>
+<script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-617928580"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","288117859005643");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=288117859005643&amp;ev=PageView&amp;noscript=1"> 
+</noscript>
+<img src="https://ib.adnxs.com/seg?add=24365203&amp;t=2" width="1" height="1">
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-617928580");</script>
+<div class="modal image-modal" id="image-modal" role="dialog" aria-modal="true"> 
+ <div class="modal-dialog"> 
+  <div class="modal-content"> 
+   <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+    <h4 class="modal-title">&nbsp;</h4> 
+   </div> 
+   <div class="modal-body"></div> 
+   <div style="line-height: normal; text-align: left;" class="modal-footer"></div><i class="image-controls left fa fa-chevron-left fa-2x"></i><i class="image-controls right fa fa-chevron-right fa-2x"></i> 
+  </div> 
+ </div> 
+</div>
+<base href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part4/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part 4</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" async src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script>
+<script src="https://connect.facebook.net/signals/config/313343962900596?v=2.9.33&amp;r=stable" async></script>
+<script src="https://connect.facebook.net/signals/config/571252266361666?v=2.9.33&amp;r=stable" async></script>
+<script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+<script type="text/javascript" async src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+<script async src="//www.google-analytics.com/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-55N43RF"></script>
+<script>
+  var dataLayer = [];
+  var gtmData = {};
+
+  
+    gtmData.advertisingPermission = true;
+    gtmData.performancePermission = true;
+    gtmData.functionalPermission = true;
+  
+  gtmData.analyticsPageUrl = '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part4';
+
+  dataLayer.push(gtmData);
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document, 'script','dataLayer', 'GTM-55N43RF');</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Warwick Search" href="//search.warwick.ac.uk/static/search/osd.xml"><!-- Google canonical URL - the main URL for this page -->
+<link rel="canonical" href="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part4/">
+<meta name="robots" content="noindex,nofollow">
+<link rel="apple-touch-icon" sizes="57x57" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-57x57.png.595542567195">
+<link rel="apple-touch-icon" sizes="60x60" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-60x60.png.493371741217">
+<link rel="apple-touch-icon" sizes="72x72" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-72x72.png.203424194728">
+<link rel="apple-touch-icon" sizes="76x76" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-76x76.png.247553332752">
+<link rel="apple-touch-icon" sizes="114x114" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-114x114.png.843902449578">
+<link rel="apple-touch-icon" sizes="120x120" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-120x120.png.333863844977">
+<link rel="apple-touch-icon" sizes="144x144" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-144x144.png.552887115038">
+<link rel="apple-touch-icon" sizes="152x152" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-152x152.png.175734862673">
+<link rel="apple-touch-icon" sizes="180x180" href="https://warwick.ac.uk/static_war/render/id7/images/apple-touch-icon-180x180.png.240072141587">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-32x32.png.165918197265" sizes="32x32">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/android-chrome-192x192.png.336101619978" sizes="192x192">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-96x96.png.276161049719" sizes="96x96">
+<link rel="icon" type="image/png" href="https://warwick.ac.uk/static_war/render/id7/images/favicon-16x16.png.207301322891" sizes="16x16">
+<meta name="msapplication-TileImage" content="https://warwick.ac.uk/static_war/render/id7/images/mstile-144x144.png.116582949768">
+<meta name="msapplication-TileColor" content="#00407A">
+<meta name="theme-color" content="#00407A"><!-- Pre-connect to Google Fonts domain -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;subset=latin,latin-ext&amp;display=optional" rel="stylesheet" as="style" type="text/css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"><!-- Pre-load FontAwesome Pro font files. Browsers supporting link[rel="preload"] all support woff2 -->
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-light-300.woff2.251483538349" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-regular-400.woff2.792461908222" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-solid-900.woff2.324325500111" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-brands-400.woff2.150834009277" as="font" crossorigin="anonymous">
+<link rel="preload" href="https://warwick.ac.uk/static_war/render/id7/fonts/fa-duotone-900.woff2.146310607822" as="font" crossorigin="anonymous">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/id7/css/pack7.css.333597196295" type="text/css"><!-- Pre-load the statuspage CSS, then after the page finishes loading, parse it -->
+<link rel="stylesheet" href="https://warwick.ac.uk/static_war/render/statuspage-widget/main.css.160527713577" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="shortcut icon" type="image/x-icon" href="https://warwick.ac.uk/static_war/render/id7/images/favicon.ico.214665304133">
+<link rel="stylesheet" href="https://warwick.ac.uk/static_site/fac/sci/dcs/site.css.695705106722" type="text/css">
+<script type="text/javascript" src="https://warwick.ac.uk/static_war/render/id7/js/id7-bundle-render.js.146613653449"></script>
+<script type="text/javascript" src="https://warwick.ac.uk/static_site/fac/sci/dcs/site.js.228251723829"></script>
+<script type="text/javascript">
+    SitebuilderInfo.url = '/fac/sci/dcs/teaching/material/cs131/part4';
+    SitebuilderInfo.lastUpdated = 1612883722160;
+    SitebuilderInfo.lastContentUpdated = 1612883722160;
+    SitebuilderInfo.buildTimestamp = '1613647620432';
+</script>
+<link rel="alternate" type="application/rss+xml" title="Changes in /fac/sci/dcs/ (RSS 2.0)" href="https://warwick.ac.uk/sitebuilder2/api/rss/siteChanges.rss?page=/fac/sci/dcs">
+<script type="text/javascript">
+Event.onDOMReady(function() { var email314709186 = '<a';
+email314709186 += ' href=';
+email314709186 += '"mailt';
+email314709186 += 'o:&#x6';
+email314709186 += '3;&#111;&';
+email314709186 += '#10';
+email314709186 += '9;';
+email314709186 += '&#112;&#45;&#x73;&#x63;&#x69;&#64;&#x64;&#99;&#115;&#x2e;&#119;';
+email314709186 += '&#97;&#x72;&#x77;&#x6';
+email314709186 += '9;&#9';
+email314709186 += '9;&#107;&#x2e;&#97;&#x63;&';
+email314709186 += '#46;&#x75;&#107;';
+email314709186 += '">&#99;';
+email314709186 += '&#111';
+email314709186 += ';&#x6d;&#x70;&';
+email314709186 += '#x2d;&#x73;&#99;&#105;&#64;&#100;&#99;';
+email314709186 += '&#x73;&#x2e;&#x77;&';
+email314709186 += '#97;&#x72;';
+email314709186 += '&#';
+email314709186 += '119;&#105;&#x6';
+email314709186 += '3;';
+email314709186 += '&#x6b;&#x2e;&#97;&#x63;&#x';
+email314709186 += '2e;&#';
+email314709186 += '117;&#107;<\/a>';
+if(document.getElementById('email314709186')) document.getElementById('email314709186').innerHTML = email314709186;
+});
+</script>
+<script src="https://ssl.google-analytics.com/ga.js" type="text/javascript" async></script>
+<script async src="https://static.hotjar.com/c/hotjar-762048.js?sv=6"></script>
+<script async src="https://script.hotjar.com/modules.851cc60e98a814a7bf2d.js" charset="utf-8"></script>
+<style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55N43RF&amp;advertisingPermission=true&amp;functionalPermission=true&amp;performancePermission=true" height="0" width="0" style="display:none;visibility:hidden"></iframe> 
+</noscript>
+<div class="id7-left-border"></div>
+<div class="id7-fixed-width-container"> 
+ <div id="covid-19-banner" class="global-info-banner"> <a class="large" href="https://warwick.ac.uk/coronavirus"> Coronavirus (Covid-19): Latest updates and information </a> 
+ </div> <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a> <a class="sr-only sr-only-focusable" href="#primary-nav" accesskey="N">Skip to navigation</a> 
+ <header class="id7-page-header"> 
+  <div class="id7-utility-masthead"> 
+   <nav class="id7-utility-bar" aria-label="Utility bar"> 
+    <ul> 
+     <li id="cookie-preference-link"><a href="https://warwick.ac.uk/sitebuilder2/user/cookiepreference/edit.htm?returnTo=/fac/sci/dcs/teaching/material/cs131/part4/" rel="nofollow" class="ut">Cookie preferences</a> </li> 
+     <li id="notify-link"><a href="https://warwick.ac.uk/sitebuilder2/user/page/notifications.htm?page=/fac/sci/dcs/teaching/material/cs131/part4/" rel="nofollow" class="ut">Notify</a> </li> 
+     <li id="account-link" data-hj-suppress=""><a href="https://websignon.warwick.ac.uk/origin/logout?target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart4" rel="nofollow" class="ut" data-toggle="id7:account-popover" data-loginlink="https://websignon.warwick.ac.uk/origin/slogin?shire=https%3A%2F%2Fwarwick.ac.uk%2Fsitebuilder2%2Fshire-read&amp;providerId=urn%3Awarwick.ac.uk%3Asitebuilder2%3Aread%3Aservice&amp;target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart4" data-usercode="u2003834" data-name="Rahul Vanmali" data-original-title="" title="" aria-expanded="false">Rahul Vanmali<span class="fa-stack id7-notifications-badge animating"> <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i> <strong class="fa-stack-1x fa brand-text counter-value slideInDown" title="Notifications">1</strong> <span class="sr-only">notifications</span> </span><span class="caret"></span></a> </li> 
+    </ul> 
+   </nav> 
+   <div class="id7-masthead"> 
+    <div class="id7-masthead-contents"> 
+     <div class="clearfix"> 
+      <div class="id7-logo-column"> 
+       <div class="id7-logo-row"> 
+        <div class="id7-logo"> <a href="https://warwick.ac.uk/" title="University of Warwick homepage"> <img src="https://warwick.ac.uk/static_war/render/id7/images/shim.gif.394887852338" alt="University of Warwick homepage" width="160" height="80"> </a> 
+        </div> 
+        <nav class="id7-site-links" aria-label="Site links"> 
+         <ul> 
+          <li><a href="https://warwick.ac.uk/study">Study</a></li> 
+          <li><a href="https://warwick.ac.uk/research">Research</a></li> 
+          <li><a href="https://warwick.ac.uk/business">Business</a></li> 
+          <li><a href="https://warwick.ac.uk/alumni">Alumni</a></li> 
+          <li><a href="https://warwick.ac.uk/news">News</a></li> 
+          <li><a href="https://warwick.ac.uk/engagement">Engagement</a></li> 
+         </ul> 
+        </nav> 
+       </div> 
+      </div> 
+      <div class="id7-search-column"> 
+       <div class="id7-search"> 
+        <form action="//search.warwick.ac.uk/website" role="search"> 
+         <input type="hidden" name="source" value="https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs131/part4/"> 
+         <div class="form-group"> 
+          <div class="id7-search-box-container floating-label" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="gen-id-100000"> 
+           <input type="search" class="form-control input-lg" id="id7-search-box" name="q" placeholder="Search Warwick" data-suggest="go" aria-label="Search Warwick" autocomplete="off" aria-autocomplete="list" aria-controls="gen-id-100000"> 
+           <ul class="typeahead dropdown-menu" role="listbox" aria-label="Search results" style="top: 46px; left: 0px; display: none;" id="gen-id-100000"></ul> 
+           <div class="sr-only" role="status" aria-live="polite"></div> <label for="id7-search-box">Search Warwick</label> <button type="submit" class="search-button"><span class="sr-only">Search</span><i class="fas fa-search fa-2x" aria-hidden="true"></i></button> 
+          </div> 
+         </div> 
+        </form> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="id7-header-text clearfix" style="height: 54px;"> 
+      <h1 class="affix-top headroom"> <span class="id7-current-site-link visible-xs-inline"> <a title="Computer Science home page [1]" href="/fac/sci/dcs/">DCS</a> </span><span class="id7-current-site-link hidden-xs"> <a accesskey="1" title="Computer Science home page [1]" href="/fac/sci/dcs/">Department of Computer Science</a> </span> </h1> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-navigation affix-top headroom" id="primary-nav"> 
+   <nav class="navbar navbar-primary hidden-xs" role="navigation" aria-label="Primary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="first dropdown" data-lastmodified="1612431350392"> <a href="/fac/sci/dcs/admissions/" data-page-url="/fac/sci/dcs/admissions/" data-toggle="dropdown" aria-haspopup="true">Admissions</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Admissions</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/undergraduate/" data-page-url="/fac/sci/dcs/admissions/undergraduate/">Undergraduate</a> </li> 
+       <li data-lastmodified="1612430239427" role="menuitem"> <a href="/fac/sci/dcs/admissions/postgraduate/" data-page-url="/fac/sci/dcs/admissions/postgraduate/">Postgraduate Taught</a> </li> 
+       <li data-lastmodified="1612430903555" role="menuitem"> <a href="/fac/sci/dcs/admissions/degree_apprenticeships/" data-page-url="/fac/sci/dcs/admissions/degree_apprenticeships/">Degree Apprenticeships</a> </li> 
+      </ul> </li> 
+     <li class="next-secondary active second dropdown" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/" data-toggle="dropdown" aria-haspopup="true">Teaching</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Teaching</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/coronavirus/" data-page-url="/fac/sci/dcs/teaching/coronavirus/">Coronavirus<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/selfisolation/" data-page-url="/fac/sci/dcs/teaching/selfisolation/">DCS Self Isolation Notification</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/studentsupportappointments/" data-page-url="/fac/sci/dcs/teaching/studentsupportappointments/">Student Support Appointment Booking Form</a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/courses/" data-page-url="/fac/sci/dcs/teaching/courses/">Course Structures</a> </li> 
+       <li class="protected" data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/handbook/" data-page-url="/fac/sci/dcs/teaching/handbook/">Student Handbook<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+       <li data-lastmodified="1612864885928" role="menuitem"> <a href="/fac/sci/dcs/teaching/modules/" data-page-url="/fac/sci/dcs/teaching/modules/">Modules Taught</a> </li> 
+       <li class="protected recently-updated" data-lastmodified="1613513785369" role="menuitem"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a> </li> 
+      </ul> </li> 
+     <li class="dropdown" data-lastmodified="1610537109578"> <a href="/fac/sci/dcs/research/" data-page-url="/fac/sci/dcs/research/" data-toggle="dropdown" aria-haspopup="true">Research</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Research</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/doctoralstudies/" data-page-url="/fac/sci/dcs/research/doctoralstudies/">Doctoral Studies</a> </li> 
+       <li class="recently-updated" data-lastmodified="1613491957724" role="menuitem"> <a href="/fac/sci/dcs/research/research-interdisc/" data-page-url="/fac/sci/dcs/research/research-interdisc/">Interdisciplinary Research Centres</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/impact/" data-page-url="/fac/sci/dcs/research/impact/">Impact and Innovation</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ac/" data-page-url="/fac/sci/dcs/research/ac/">Applied Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/ai/" data-page-url="/fac/sci/dcs/research/ai/">Artificial Intelligence</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/datascience/" data-page-url="/fac/sci/dcs/research/datascience/">Data Science</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/hcc/" data-page-url="/fac/sci/dcs/research/hcc/">Human Centred Computing</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/systems/" data-page-url="/fac/sci/dcs/research/systems/">Systems and Security</a> </li> 
+       <li data-lastmodified="1610537109578" role="menuitem"> <a href="/fac/sci/dcs/research/focs/" data-page-url="/fac/sci/dcs/research/focs/">Theory and Foundations</a> </li> 
+      </ul> </li> 
+     <li data-lastmodified="1610979242144"> <a href="/fac/sci/dcs/people/" data-page-url="/fac/sci/dcs/people/">People</a></li> 
+     <li data-lastmodified="1613046125664"> <a href="/fac/sci/dcs/news/" data-page-url="/fac/sci/dcs/news/">News</a></li> 
+     <li class="dropdown" data-lastmodified="1612704558717"> <a href="/fac/sci/dcs/events/" data-page-url="/fac/sci/dcs/events/" data-toggle="dropdown" aria-haspopup="true">Events</a><button class="nav-dropdown-button sr-only sr-only-focusable"><span>Show submenu<span class="sr-only"> for Events</span></span></button> 
+      <ul class="dropdown-menu" role="menu"> 
+       <li data-lastmodified="1611775499228" role="menuitem"> <a href="/fac/sci/dcs/events/colloquia/" data-page-url="/fac/sci/dcs/events/colloquia/">Computer Science Colloquium</a> </li> 
+      </ul> </li> 
+     <li class="recently-updated" data-lastmodified="1613639149032"> <a href="/fac/sci/dcs/jobs/" data-page-url="/fac/sci/dcs/jobs/">Vacancies</a></li> 
+     <li class="protected" data-lastmodified="1613033396423"> <a href="/fac/sci/dcs/intranet/" data-page-url="/fac/sci/dcs/intranet/">Intranet<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+   <nav class="navbar navbar-secondary" role="navigation" aria-label="Secondary navigation"> 
+    <ul class="nav navbar-nav"> 
+     <li class="nav-breadcrumb first" data-lastmodified="1612864885928"> <a href="/fac/sci/dcs/teaching/" data-page-url="/fac/sci/dcs/teaching/">Teaching</a></li> 
+     <li class="nav-breadcrumb second protected recently-updated" data-lastmodified="1613513785369"> <a href="/fac/sci/dcs/teaching/material/" data-page-url="/fac/sci/dcs/teaching/material/">Online Material<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="nav-breadcrumb protected recently-updated" data-lastmodified="1613561700740"> <a href="/fac/sci/dcs/teaching/material/cs131/" data-page-url="/fac/sci/dcs/teaching/material/cs131/">CS131<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+     <li class="active nav-breadcrumb last protected" data-lastmodified="1612883722160"> <a tabindex="0" data-page-url="/fac/sci/dcs/teaching/material/cs131/part4/">Part 4<i class="fa fa-lock discreet" title="Restricted permissions" aria-hidden="true"></i><span class="sr-only">(Restricted permissions)</span></a></li> 
+    </ul> 
+   </nav> 
+  </div> 
+  <div class="id7-navigation-marker" style="height: 69.1875px;"></div> 
+ </header> 
+ <main id="main" class="id7-main-content-area"> 
+  <header> 
+   <div class="id7-horizontal-divider"> 
+    <svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" width="1130" height="41" viewbox="0, 0, 1130, 41"> <path d="m 0,0.5 1030.48, 0 22.8,40 16.96,-31.4 16.96,31.4 22.8,-40 20,0" class="divider" stroke="#383838" fill="none"></path> 
+    </svg> 
+   </div> 
+   <div class="id7-page-title"> 
+    <h1> Part 4 </h1> 
+   </div> 
+  </header> 
+  <div class="id7-main-content"> 
+   <div class="layout layout-75-25"> 
+    <div class="column-1"> 
+     <div class="column-1-content"> 
+      <div class="id7-main-content"> 
+       <div class="layout layout-75-25"> 
+        <div class="column-1"> 
+         <div class="column-1-content"> 
+          <div class="boxstyle_ box1"> 
+           <ul> 
+            <li>Week 8: (lectures 22-24)</li> 
+           </ul> 
+          </div> 
+          <div class="boxstyle_ box1"> 
+           <ul> 
+            <li>Week 9: (lectures 25-27)</li> 
+           </ul> 
+          </div> 
+          <div class="boxstyle_ box1"> 
+           <ul> 
+            <li>Week 10 (lectures 28-30)</li> 
+           </ul> 
+          </div> 
+          <div class="id7-main-content"> 
+           <div class="layout layout-75-25"> 
+            <div class="column-1"> 
+             <div class="column-1-content"> 
+              <div class="boxstyle_ box1"> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="column-2"> 
+     <div class="column-2-content"> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </main> 
+ <footer class="id7-page-footer id7-footer-coloured"> 
+  <div class="id7-site-footer"> 
+   <div class="id7-site-footer-content"> 
+    <div class="row "> 
+     <div class="col-sm-6"> 
+      <p>Department of Computer Science, <br> University of Warwick, CV4 7AL <br> E-mail: <span id="email314709186"><a href="mailto:comp-sci@dcs.warwick.ac.uk">comp-sci@dcs.warwick.ac.uk</a></span>, <br> Telephone: <a href="tel:+442476523193">+44 (0)24 7652 3193</a> </p> 
+     </div> 
+     <div class="col-sm-6"> 
+      <div class="pull-right"> <a href="/fac/sci/dcs/intranet" class="btn btn-primary">DCS Intranet </a> <a href="/fac/sci/dcs/people/athena-swan/"><img src="/fac/sci/dcs/athena-swan-bronze-100.png" alt="Athena Swan HE Charter Bronze Award logo" border="0"></a> <a href="https://www.facebook.com/warwickdcs/" aria-label="DCS on Facebook"><i class="fa fa-facebook fa-3x fa-fw"></i><span class="sr-only">Facebook</span></a><a href="https://twitter.com/WarwickDCS" aria-label="DCS on Twitter"><i class="fa fa-twitter fa-3x fa-fw"></i><span class="sr-only">Twitter</span></a><a href="https://www.linkedin.com/groups/38372/" aria-label="DCS on LinkedIn"><i class="fa fa-linkedin fa-3x fa-fw"></i><span class="sr-only">LinkedIn</span></a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="id7-app-footer"> 
+   <div class="id7-app-footer-content"> 
+    <div class="id7-logo-bleed"></div> 
+    <div id="page-footer-elements" class="nofollow clearfix page-footer-elements">
+      Page contact: <a id="email-owner-link" href="/sitebuilder2/api/ajax/emailOwner.htm?page=%2Ffac%2Fsci%2Fdcs%2Fteaching%2Fmaterial%2Fcs131%2Fpart4" class="no-print-expand" title="Send an email to Yulia Timofeeva" rel="nofollow">Yulia Timofeeva</a> 
+     <br> Last revised: Tue 9 Feb 2021 
+    </div> 
+    <div class="id7-footer-utility"> 
+     <ul> 
+      <li id="powered-by-link"> Powered by <a href="https://warwick.ac.uk/sitebuilder" title="More information about SiteBuilder">Sitebuilder</a> </li> 
+      <li id="copyright-link"><a href="http://warwick.ac.uk/copyright" title="Copyright Statement">© MMXXI</a></li> 
+      <li id="terms-link"><a href="http://warwick.ac.uk/terms/general" title="Terms of use">Terms</a></li> 
+      <li id="privacy-link"><a href="http://warwick.ac.uk/privacy" title="Privacy notice">Privacy</a></li> 
+      <li id="cookies-link"><a href="http://warwick.ac.uk/cookies" title="Information about cookies">Cookies</a></li> 
+      <li id="accessibility-link"><a href="https://warwick.ac.uk/accessibility" title="Accessibility information [0]" accesskey="0">Accessibility</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+ </footer> 
+</div>
+<div class="id7-right-border"></div><!-- New analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('require', 'linkid', 'linkid.js');
+    
+    
+    
+    ga('create', 'UA-40911470-1', 'auto', 'global1');
+    ga('global1.set', 'anonymizeIp', true);
+    ga('global1.send', 'pageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part4');
+    
+    
+    
+    
+    
+        
+        
+    var _gaq = _gaq || [];
+    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+    _gaq.push(['site._setAccount', 'UA-27588828-1']);
+    _gaq.push(['site._trackPageview', '\/fac\/sci\/dcs\/teaching\/material\/cs131\/part4']);
+    _gaq.push(['site._trackPageLoadTime']);
+    
+    var analyticsLoad = function() {
+        var s    = document.createElement('script');
+        s.src    = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        s.type   = "text/javascript";
+        s.async  = true;
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
+    };
+    if (window.Event && Event.observe) {
+        Event.observe(window, 'load', analyticsLoad);
+    } else {
+        var oldLoad = window.onload;
+        window.onload = function() {
+            if (typeof oldLoad == 'function') oldLoad();
+            analyticsLoad();
+        };
+    }
+        
+    
+    
+    </script>
+<div class="cookie-preference-modal-container"></div>
+<div class="statuspage-embed-container" data-api-base="https://status.warwick.ac.uk/api" data-components="[&quot;j9ksmwrhqs9v&quot;, &quot;fzcttzffk1j0&quot;, &quot;lyljzmdxg3yg&quot;, &quot;qkfm31zsq8c5&quot;]"> 
+ <div class="StatusPageEmbed StatusPageEmbed--bl StatusPageEmbed--none  "> 
+  <div class="StatusPageEmbed__icon"></div> 
+  <div class="StatusPageEmbed__content"> 
+   <h1 class="StatusPageEmbed__content__title">All Systems Operational</h1> 
+   <div class="StatusPageEmbed__content__context"></div> 
+  </div> 
+  <div class="StatusPageEmbed__close"> <button class="StatusPageEmbed__close__button" aria-label="Close" tabindex="-1"><i class="fas fa-times" aria-hidden="true"></i></button> 
+  </div> 
+ </div> 
+</div>
+<script async type="module" src="https://warwick.ac.uk/static_war/render/statuspage-widget/main.js.258593508940"></script>
+<div class="modal image-modal" id="image-modal" role="dialog" aria-modal="true"> 
+ <div class="modal-dialog"> 
+  <div class="modal-content"> 
+   <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+    <h4 class="modal-title">&nbsp;</h4> 
+   </div> 
+   <div class="modal-body"></div> 
+   <div style="line-height: normal; text-align: left;" class="modal-footer"></div><i class="image-controls left fa fa-chevron-left fa-2x"></i><i class="image-controls right fa fa-chevron-right fa-2x"></i> 
+  </div> 
+ </div> 
+</div>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:762048,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script>
+<script type="text/javascript" id="">(function(a){a(document).ready(function(){a("#account-link").attr("data-hj-suppress","")})})(window.jQuery);</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","571252266361666");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=571252266361666&amp;ev=PageView
+&amp;noscript=1"> 
+</noscript>
+<div style="display: none; visibility: hidden;"> 
+ <script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","313343962900596");fbq("track","PageView");</script> 
+ <noscript></noscript> 
+</div>
+<script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-617928580"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","288117859005643");fbq("track","PageView");</script>
+<noscript> 
+ <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=288117859005643&amp;ev=PageView&amp;noscript=1"> 
+</noscript>
+<img src="https://ib.adnxs.com/seg?add=24365203&amp;t=2" width="1" height="1">
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-617928580");</script>
